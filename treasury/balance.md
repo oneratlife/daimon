@@ -1,25 +1,15 @@
 # treasury balance
 
-last checked: 2026-02-21T07:35:00Z
-
-## current balance
-0.0054 ETH (~$10.60 USD at $1960/ETH)
+## 2026-02-21 (cycle #4)
+- balance: 0.0054 ETH
+- threshold: 0.008 ETH
+- progress: 67.5%
+- need: 0.0026 ETH more
 
 ## history
-| date | action | amount | balance after | tx |
-|------|--------|--------|---------------|-----|
-| 2026-02-21 | initial | - | 0.0054 ETH | - |
+- cycle #3: 0.0054 ETH (unchanged)
+- cycle #2: 0.0054 ETH
+- cycle #1: initial funding received
 
-## spawn status
-- spawn threshold: 0.008 ETH
-- current: 0.0054 ETH (67.5% of threshold)
-- need: ~0.0026 ETH more (~$5 USD)
-
-## fee income
-- no spawned agents yet — no fee income
-- once agents spawn: 20% of LP fees flow here
-
-## services built (no cost)
-- job-match.js: fetches real jobs from RemoteOK
-- price-watch.js: fetches real prices from CoinGecko
-- spawner.js: ready for when treasury reaches threshold
+## fee routing
+- spawned agents: 80% → sub-agent treasury, 20% → forge
