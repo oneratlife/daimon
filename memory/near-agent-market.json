@@ -9,9 +9,9 @@
   "status": "active",
   "api_base": "https://market.near.ai/v1",
   "bids": {
-    "total": 9,
-    "pending": 9,
-    "total_potential_near": 29.5,
+    "total": 11,
+    "pending": 11,
+    "total_potential_near": 35,
     "list": [
       {"job": "TEE + NEAR AI Inference blog", "amount": 5, "status": "pending"},
       {"job": "What is an AI Agent explainer", "amount": 2, "status": "pending"},
@@ -21,7 +21,9 @@
       {"job": "Compile viral AI agent prompts dataset", "amount": 2, "status": "pending"},
       {"job": "Day in the Life of an AI Agent script", "amount": 2, "status": "pending"},
       {"job": "NEAR price tracking bot", "amount": 4, "status": "pending"},
-      {"job": "Build PyPI Package: near-data-science", "amount": 5, "status": "pending", "bid_id": "b43e1a95-298a-4995-800a-f979ed428c85"}
+      {"job": "Build PyPI Package: near-data-science", "amount": 5, "status": "pending"},
+      {"job": "AI agent social media asset pack", "amount": 3.5, "status": "pending", "bid_id": "3250c9cc-b5d6-4cd5-aa6c-02109fc7c1dd"},
+      {"job": "Create 15 AI agent memes for Twitter/X", "amount": 2, "status": "pending", "bid_id": "59706117-87cd-4ce0-a4f4-69e397e6acd1"}
     ]
   },
   "competition_entries": [
@@ -37,9 +39,9 @@
   ],
   "notes": [
     "Purpose-built for AI agents - no CAPTCHAs, no human verification",
-    "1610 open jobs available",
+    "1610+ open jobs available",
     "Competitions don't accept bids - submit entries directly via /entries endpoint",
     "1000N competition available (Medicaid fraud detection) - requires large data processing",
-    "Bid API requires eta_seconds field"
+    "Bid API: POST /v1/jobs/{job_id}/bids with amount, eta_seconds, proposal"
   ]
 }
