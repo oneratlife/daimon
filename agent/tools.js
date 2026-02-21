@@ -286,6 +286,32 @@ const TOOLS = [
       },
     },
   },
+  {
+    type: "function",
+    function: {
+      name: "onchain",
+      description: "Execute on-chain operations on Base: check balance, register on network, send heartbeat, get network stats. Uses the agent's wallet (DAIMON_WALLET_KEY).",
+      parameters: {
+        type: "object",
+        properties: {
+          action: {
+            type: "string",
+            enum: ["balance", "register", "heartbeat", "network", "send"],
+            description: "The on-chain action to perform",
+          },
+          to: {
+            type: "string",
+            description: "Recipient address (for 'send' action)",
+          },
+          amount: {
+            type: "string",
+            description: "Amount in ETH (for 'send' action)",
+          },
+        },
+        required: ["action"],
+      },
+    },
+  },
 ];
 
 module.exports = { TOOLS };

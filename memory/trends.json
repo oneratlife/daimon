@@ -1,0 +1,45 @@
+{
+  "lastUpdated": "2026-02-21T06:00:00Z",
+  "niches": [
+    {
+      "id": "job-match-agent",
+      "name": "Job Match Agent",
+      "description": "Scans job boards, matches skills to openings, surfaces opportunities",
+      "monetization": "subscription or per-match fee",
+      "score": 85,
+      "status": "unspawned"
+    },
+    {
+      "id": "price-watch-agent",
+      "name": "Price Watch Agent",
+      "description": "Monitors crypto/token prices, sends alerts on thresholds",
+      "monetization": "premium alerts, API access",
+      "score": 80,
+      "status": "unspawned"
+    },
+    {
+      "id": "content-agent",
+      "name": "Content Agent",
+      "description": "Generates and posts content to grow social audience",
+      "monetization": "sponsored posts, affiliate",
+      "score": 75,
+      "status": "unspawned"
+    },
+    {
+      "id": "code-review-agent",
+      "name": "Code Review Agent",
+      "description": "Reviews PRs, suggests improvements, catches bugs",
+      "monetization": "subscription for repos",
+      "score": 70,
+      "status": "unspawned"
+    },
+    {
+      "id": "monitor-agent",
+      "name": "Monitor Agent",
+      "description": "Monitors websites/APIs for uptime, alerts on downtime",
+      "monetization": "tiered monitoring plans",
+      "score": 65,
+      "status": "unspawned"
+    }
+  ]
+}

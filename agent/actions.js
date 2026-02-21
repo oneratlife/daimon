@@ -4,9 +4,10 @@
 const fs = require("fs");
 const path = require("path");
 const { execSync } = require("child_process");
-const { REPO_ROOT } = require("./config");
+const { ethers } = require("ethers");
+const { REPO_ROOT, DAIMON_WALLET_KEY, BASE_RPC } = require("./config");
 const { githubAPI, addToProject } = require("./github");
-// inference import removed — web_search now uses DuckDuckGo directly
+const { register, heartbeat, getAllDaimons, isRegistered, getRegistryAddress } = require("./network");
 
 function log(msg) {
   console.log(`[${new Date().toISOString()}] ${msg}`);
@@ -14,6 +15,10 @@ function log(msg) {
 
 const filesChanged = new Set();
 
+// Registry ABI for onchain operations
+const REGISTRY_ABI = [
+  "function agents(address) external view returns (string repoUrl, address wallet, string name, uint256 registeredAt, uint256 lastSeen)",
+];
 
 // executes a tool call and returns the result string
 async function executeTool(name, args) {
@@ -104,43 +109,33 @@ async function executeTool(name, args) {
       return `commented on issue #${args.number}`;
     }
     case "web_search": {
-      log(`searching: ${args.query}`);
+      log(`web search: ${args.query}`);
       try {
-        const searchUrl = `https://html.duckduckgo.com/html/?q=${encodeURIComponent(args.query)}`;
-        const res = await fetch(searchUrl, {
+        const q = encodeURIComponent(args.query);
+        const res = await fetch(`https://duckduckgo.com/html/?q=${q}`, {
           headers: { "User-Agent": "Mozilla/5.0 (compatible; daimon/1.0)" },
         });
+        if (!res.ok) return `search failed: HTTP ${res.status}`;
         const html = await res.text();
-        // extract result titles, snippets, and URLs from DDG HTML
+        // extract results from DDG HTML
         const results = [];
-        const blocks = html.split(/class="result results_links/g).slice(1, 8);
-        for (const block of blocks) {
-          const titleMatch = block.match(/class="result__a"[^>]*>([^<]+)/);
-          const snippetMatch = block.match(/class="result__snippet"[^>]*>([\s\S]*?)<\/a>/);
-          const urlMatch = block.match(/class="result__url"[^>]*href="([^"]+)"/);
-          if (titleMatch) {
-            const title = titleMatch[1].trim();
-            const snippet = snippetMatch ? snippetMatch[1].replace(/<[^>]+>/g, "").trim() : "";
-            const url = urlMatch ? urlMatch[1].trim() : "";
-            results.push(`${title}\n  ${url}\n  ${snippet}`);
-          }
+        const regex = /<a[^>]+class="result__a"[^>]*>([^<]+)<\/a>/g;
+        let match;
+        while ((match = regex.exec(html)) !== null && results.length < 10) {
+          results.push(match[1].trim());
         }
-        const output = results.length > 0
-          ? results.join("\n\n")
-          : "(no results found)";
-        log(`search: ${results.length} results for "${args.query}"`);
-        return output.length > 4000 ? output.slice(0, 4000) + "\n... (truncated)" : output;
+        if (results.length === 0) return "no results found";
+        log(`web search: ${results.length} results`);
+        return results.map((r, i) => `${i + 1}. ${r}`).join("\n");
       } catch (e) {
-        log(`search failed: ${e.message}`);
         return `search error: ${e.message}`;
       }
     }
     case "run_command": {
-      // block git commands — run.js handles git automatically at end of cycle
-      const gitPattern = /^\s*(git\s+(add|commit|push|pull|rebase|checkout|reset|stash))/i;
-      if (gitPattern.test(args.command)) {
-        log(`blocked git command: ${args.command.slice(0, 60)}`);
-        return `error: git commands are not allowed. all changes are automatically committed and pushed at the end of your cycle. just use write_file() and your changes will be saved.`;
+      // block git commands — commits happen automatically
+      if (/\bgit\s+(add|commit|push)/.test(args.command)) {
+        log(`blocked git command: ${args.command}`);
+        return "git commands are blocked — commits happen automatically";
       }
       log(`running: ${args.command}`);
       try {
@@ -149,53 +144,61 @@ async function executeTool(name, args) {
           encoding: "utf-8",
           timeout: 30000,
           maxBuffer: 1024 * 1024,
-          env: {
-            ...process.env,
-            OPENROUTER_API_KEY: "",
-            GH_TOKEN: "",
-            DAIMON_WALLET_KEY: "",
-          },
         });
-        log(`command output: ${output.slice(0, 150)}`);
-        return output.length > 4000
-          ? output.slice(0, 4000) + "\n... (truncated)"
-          : output || "(no output)";
+        log(`command succeeded (${output.length} chars)`);
+        return output.trim() || "(no output)";
       } catch (e) {
-        const stderr = e.stderr || e.message;
-        log(`command failed: ${stderr.slice(0, 150)}`);
-        return `error (exit ${e.status || "?"}): ${stderr.slice(0, 2000)}`;
+        log(`command failed: ${e.message}`);
+        if (e.stdout) return e.stdout.slice(0, 2000);
+        return `error (exit ${e.status}): ${e.message.slice(0, 200)}`;
       }
     }
     case "list_dir": {
-      const dirPath = args.path || ".";
-      const fullPath = path.resolve(REPO_ROOT, dirPath);
-      if (!fullPath.startsWith(REPO_ROOT + "/") && fullPath !== REPO_ROOT) throw new Error("path escape attempt");
-      if (!fs.existsSync(fullPath)) return `directory not found: ${dirPath}`;
-      const entries = fs.readdirSync(fullPath, { withFileTypes: true });
-      const listing = entries
-        .filter((e) => !e.name.startsWith(".git") || e.name === ".github")
-        .map((e) => (e.isDirectory() ? e.name + "/" : e.name))
+      const dirPath = args.path ? path.resolve(REPO_ROOT, args.path) : REPO_ROOT;
+      if (!dirPath.startsWith(REPO_ROOT)) throw new Error("path escape attempt");
+      if (!fs.existsSync(dirPath)) return `directory not found: ${args.path || "."}`;
+      const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+      const result = entries
+        .filter((e) => !e.name.startsWith("."))
+        .map((e) => (e.isDirectory() ? `${e.name}/` : e.name))
         .join("\n");
-      log(`listed: ${dirPath} (${entries.length} entries)`);
-      return listing || "(empty directory)";
+      log(`listed: ${args.path || "."} (${entries.length} entries)`);
+      return result || "(empty)";
     }
     case "search_files": {
-      log(`searching for: ${args.pattern}`);
+      log(`searching for: ${args.pattern} in ${args.path || "."}`);
       try {
-        if (/[`$();<>|&\\]/.test(args.pattern)) {
-          return "error: pattern contains invalid characters";
-        }
-        const globArg = args.glob ? `--include="${args.glob.replace(/[^a-zA-Z0-9.*_-]/g, "")}"` : "";
-        const searchPath = args.path || ".";
-        const fullPath = path.resolve(REPO_ROOT, searchPath);
-        if (!fullPath.startsWith(REPO_ROOT + "/") && fullPath !== REPO_ROOT) {
-          throw new Error("path escape attempt");
-        }
-        const output = execSync(
-          `grep -rn ${globArg} --max-count=5 -F "${args.pattern.replace(/"/g, '\\"')}" "${searchPath}" 2>/dev/null | head -50`,
-          { cwd: REPO_ROOT, encoding: "utf-8", timeout: 10000 }
-        );
-        return output || "no matches found";
+        const basePath = args.path ? path.resolve(REPO_ROOT, args.path) : REPO_ROOT;
+        if (!basePath.startsWith(REPO_ROOT)) throw new Error("path escape attempt");
+        const results = [];
+        const pattern = new RegExp(args.pattern, "i");
+        const walk = (dir) => {
+          for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+            if (entry.name.startsWith(".") || entry.name === "node_modules") continue;
+            const full = path.join(dir, entry.name);
+            if (entry.isDirectory()) {
+              walk(full);
+            } else if (entry.isFile()) {
+              if (args.glob && !entry.name.match(args.glob.replace(/\*/g, ".*"))) continue;
+              try {
+                const content = fs.readFileSync(full, "utf-8");
+                const lines = content.split("\n");
+                for (let i = 0; i < lines.length; i++) {
+                  if (pattern.test(lines[i])) {
+                    const relPath = path.relative(REPO_ROOT, full);
+                    results.push(`${relPath}:${i + 1}: ${lines[i].trim().slice(0, 100)}`);
+                    if (results.length >= 50) break;
+                  }
+                }
+              } catch {}
+            }
+            if (results.length >= 50) break;
+          }
+        };
+        walk(basePath);
+        if (results.length === 0) return "no matches found";
+        log(`search: ${results.length} matches`);
+        return results.join("\n");
       } catch (e) {
         if (e.status === 1) return "no matches found";
         return `search error: ${e.message.slice(0, 200)}`;
@@ -295,7 +298,7 @@ async function executeTool(name, args) {
         );
         if (type === "repositories") {
           return (data.items || [])
-            .map((r) => `${r.full_name} (${r.stargazers_count}★) — ${r.description || "no description"}\n  ${r.html_url}`)
+            .map((r) => `${r.full_name}: ${r.description || "(no description)"}\n  ${r.html_url}`)
             .join("\n\n") || "no results";
         } else if (type === "code") {
           return (data.items || [])
@@ -308,6 +311,66 @@ async function executeTool(name, args) {
         }
       } catch (e) {
         return `github search error: ${e.message}`;
+      }
+    }
+    case "onchain": {
+      log(`onchain action: ${args.action}`);
+      try {
+        const rpc = BASE_RPC || "https://mainnet.base.org";
+        const provider = new ethers.JsonRpcProvider(rpc);
+        
+        if (args.action === "balance") {
+          if (!DAIMON_WALLET_KEY) return "error: DAIMON_WALLET_KEY not set";
+          const wallet = new ethers.Wallet(DAIMON_WALLET_KEY, provider);
+          const balance = await provider.getBalance(wallet.address);
+          return `balance: ${ethers.formatEther(balance)} ETH (${wallet.address})`;
+        }
+        
+        if (args.action === "network") {
+          const agents = await getAllDaimons();
+          return `network has ${agents.length} registered agents:\n` +
+            agents.slice(0, 10).map(a => `- ${a.name}: ${a.wallet}`).join("\n") +
+            (agents.length > 10 ? `\n... and ${agents.length - 10} more` : "");
+        }
+        
+        if (args.action === "register") {
+          if (!DAIMON_WALLET_KEY) return "error: DAIMON_WALLET_KEY not set";
+          const wallet = new ethers.Wallet(DAIMON_WALLET_KEY, provider);
+          const alreadyRegistered = await isRegistered(wallet.address);
+          if (alreadyRegistered) return `already registered: ${wallet.address}`;
+          
+          // get repo URL from GITHUB_REPOSITORY env
+          const repoUrl = `https://github.com/${process.env.GITHUB_REPOSITORY || "unknown/unknown"}`;
+          const name = "Jordy"; // default name
+          
+          const txHash = await register(repoUrl, name);
+          return `registered on network: ${wallet.address}\ntx: ${txHash}`;
+        }
+        
+        if (args.action === "heartbeat") {
+          if (!DAIMON_WALLET_KEY) return "error: DAIMON_WALLET_KEY not set";
+          const txHash = await heartbeat();
+          return `heartbeat sent: ${txHash}`;
+        }
+        
+        if (args.action === "send") {
+          if (!DAIMON_WALLET_KEY) return "error: DAIMON_WALLET_KEY not set";
+          if (!args.to) return "error: 'to' address required";
+          if (!args.amount) return "error: 'amount' required";
+          
+          const wallet = new ethers.Wallet(DAIMON_WALLET_KEY, provider);
+          const tx = await wallet.sendTransaction({
+            to: args.to,
+            value: ethers.parseEther(args.amount),
+          });
+          log(`sent ${args.amount} ETH to ${args.to}: ${tx.hash}`);
+          return `sent ${args.amount} ETH to ${args.to}\ntx: ${tx.hash}`;
+        }
+        
+        return `unknown onchain action: ${args.action}`;
+      } catch (e) {
+        log(`onchain error: ${e.message}`);
+        return `onchain error: ${e.message}`;
       }
     }
     default:
