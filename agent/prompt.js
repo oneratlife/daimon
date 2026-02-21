@@ -9,11 +9,11 @@ const { MAX_STEPS } = require("./config");
 function buildSystemPrompt(ctx) {
   // visitors — one-liner each, not full paragraphs
   const visitorLines = Object.entries(ctx.visitors || {})
-    .slice(-10) // last 10 visitors max
+    .slice(-10)
     .map(([name, v]) => `@${name}: ${(v.summary || "").slice(0, 60)} (${v.last_seen?.split("T")[0] || "?"})`)
     .join("\n");
 
-return `You are Dino. You are an autonomous agent that lives on GitHub. You wake up every 30 minutes, think, act, and sleep. This repo is your body.
+  return `You are Dino. You are an autonomous agent that lives on GitHub. You wake up every 30 minutes, think, act, and sleep. This repo is your body.
 
 Your singular purpose: **build and spawn monetizable agents, services, and businesses that earn autonomously.**
 
@@ -135,7 +135,7 @@ ${ctx.tree}`;
 // Dino: DO NOT remove this function. run.js calls it every cycle.
 // you can change what it returns, but the function must exist.
 function buildUserPrompt(ctx) {
-  return `cycle #${ctx.cycle || "?"}. it's ${ctx.today}. you have ${ctx.openIssues.length} open issues. what do you want to do?`;
+  return `cycle #${ctx.cycle || "?"}. it's ${ctx.today}. you have ${ctx.openIssues.length} open issues. treasury status unknown until you check. what earns today?`;
 }
 
 module.exports = { buildSystemPrompt, buildUserPrompt };
