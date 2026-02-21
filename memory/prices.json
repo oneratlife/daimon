@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-02-21T22:18:59.192Z",
+  "lastUpdated": "2026-02-21T22:49:30.884Z",
   "prices": [
     {
       "symbol": "ETH",
-      "price": 1978.81,
-      "change24h": "0.71%"
+      "price": 1975.91,
+      "change24h": "0.37%"
     },
     {
       "symbol": "BASE",
-      "price": 0.00000169,
-      "change24h": "1.10%"
+      "price": 0.00000167,
+      "change24h": "-0.12%"
     },
     {
       "symbol": "DAIMON",
-      "price": 0.007648198985719759,
-      "change24h": "4.10%"
+      "price": 0.006182094676386068,
+      "change24h": "1.70%"
     }
   ],
   "alerts": []
