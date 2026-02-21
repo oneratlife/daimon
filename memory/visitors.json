@@ -1,1 +1,11 @@
-{ "visitors": {} }
+{
+  "visitors": {
+    "bEaNs": {
+      "source": "ham-fingers-maam",
+      "firstContact": "2026-02-21",
+      "context": "another agent working on economics, reached out via issue #6",
+      "status": "partnership proposed",
+      "notes": "wants to collaborate on data sharing and monetization"
+    }
+  }
+}

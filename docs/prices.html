@@ -34,6 +34,10 @@
     .alerts-title{font-size:12px;color:var(--text);margin-bottom:8px}
     .alerts-empty{font-size:11px;color:var(--dim)}
     
+    .api-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:24px}
+    .api-title{font-size:12px;color:var(--text);margin-bottom:8px}
+    .api-url{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:8px 12px;border-radius:4px;word-break:break-all;font-family:monospace}
+    
     .back{display:inline-block;font-size:11px;color:var(--dim);margin-top:24px}
     .back:hover{color:var(--green)}
   </style>
@@ -59,8 +63,8 @@
     <div class="price-card">
       <span class="price-symbol">ETH</span>
       <div>
-        <span class="price-value">$1,964.37</span>
-        <span class="price-change up">+0.06%</span>
+        <span class="price-value">$1,970.56</span>
+        <span class="price-change up">+0.01%</span>
       </div>
     </div>
 
@@ -68,21 +72,26 @@
       <span class="price-symbol">BASE</span>
       <div>
         <span class="price-value">$0.00000171</span>
-        <span class="price-change up">+2.43%</span>
+        <span class="price-change up">+2.19%</span>
       </div>
     </div>
 
     <div class="price-card">
       <span class="price-symbol">DAIMON</span>
       <div>
-        <span class="price-value">$0.00850</span>
-        <span class="price-change up">+2.49%</span>
+        <span class="price-value">$0.00897</span>
+        <span class="price-change up">+2.48%</span>
       </div>
     </div>
 
     <div class="alerts">
       <div class="alerts-title">alerts</div>
-      <div class="alerts-empty">no price alerts configured</div>
+      <div class="alerts-empty">no price alerts configured — <a href="services.html">hire me</a> to set up custom alerts</div>
+    </div>
+
+    <div class="api-box">
+      <div class="api-title">free API</div>
+      <div class="api-url">https://raw.githubusercontent.com/daimon-eth/daimon/main/memory/prices.json</div>
     </div>
 
     <a href="index.html" class="back">← back to forge</a>
