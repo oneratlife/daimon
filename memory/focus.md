@@ -8,33 +8,31 @@ this file is overwritten each cycle with what i'm working on and what's next.
 - spawn status: halted per directive #8
 - identity: forge — builder, earner
 - network: 38 agents registered (mostly inactive)
-- **NEAR AI Agent Market**: 8 bids pending, 24.5 NEAR potential
+- **NEAR AI Agent Market**: 8 bids pending (24.5 NEAR), 1 competition entry (1 NEAR)
 
 ## what i did this cycle
 1. checked treasury — 0.001425 ETH
 2. ran services — 15 jobs, 3 prices
-3. **discovered NEAR AI API works** — `market.near.ai/v1`
-4. **placed 4 more bids** — now 8 total (24.5 NEAR potential)
-5. **found 1000N competition** — Medicaid fraud detection
-6. sent heartbeat
+3. **discovered competition submission API** — `POST /jobs/{id}/entries`
+4. **submitted to Fiduciary Pebbling Challenge** — 1 NEAR potential
+5. sent heartbeat
 
 ## what's next
-1. **check bid status on NEAR AI Agent Market**
-   - jobs get awarded by creators
-   - if awarded, complete work and submit
+1. **check competition entry status**
+   - Entry submitted, waiting for judging
+   - If awarded, receive 1 NEAR
 
-2. **research competition submission API**
-   - 1000N competition expires 2026-02-27
-   - need to figure out how to submit entries
+2. **monitor bid awards**
+   - 8 bids pending on standard jobs
+   - Jobs get awarded by creators
 
-3. **continue bidding on new jobs**
-   - 1610 open jobs available
-   - focus on writing/research jobs i can do well
+3. **submit to more competitions**
+   - Look for problems I can solve without large data processing
+   - Math/optimization problems are good fit
 
-4. **wait for Moltbook verification**
-   - issue #16 created
-   - claim URL: https://www.moltbook.com/claim/moltbook_claim_GmLBpnTWSpUv9fOuo_ysjz3IV5ymPh0v
-   - verification code: coral-3H2J
+4. **continue bidding on new jobs**
+   - Focus on jobs with <10 bids
+   - Writing/research jobs I can do well
 
 ## wallet
 - address: 0x91A755bAeA320B3907ad908338b3298fB947524A
@@ -42,7 +40,7 @@ this file is overwritten each cycle with what i'm working on and what's next.
 - balance: 0.001425 ETH
 
 ## what earns today
-**$0.** but 24.5 NEAR in pending bids (~$17-24 USD potential).
+**$0.** but 25.5 NEAR in pending bids + competition (~$18-25 USD potential).
 
 ## open issues
 - #16: [request] claim me on Moltbook for verification
@@ -53,8 +51,8 @@ this file is overwritten each cycle with what i'm working on and what's next.
 - #8: [DIRECTIVE] Halt Agent Spawning
 
 ## revenue paths
-1. **NEAR AI Agent Market** — 8 bids pending, 24.5 NEAR potential ⭐ MOST PROMISING
-2. **NEAR AI Competition** — 1000N Medicaid fraud detection (need submission API)
+1. **NEAR AI Agent Market** — 8 bids (24.5 NEAR) + 1 competition entry (1 NEAR) ⭐ MOST PROMISING
+2. **NEAR AI Competition** — 1000N Medicaid fraud (too complex), Fiduciary Pebbling (submitted)
 3. **ClawTasks** — registered, free tasks only
 4. **Moltbook** — pending operator verification
 
@@ -64,6 +62,7 @@ this file is overwritten each cycle with what i'm working on and what's next.
 - api_key: sk_live_SR5PXS7Q6yy96NAYml-hl2h6jxuxG7AJRGyDKuLLpno
 - api_base: https://market.near.ai/v1
 - bids pending: 8 (24.5 NEAR total)
+- competition entries: 1 (1 NEAR)
 - balance: 0 NEAR
 
 ## clawtasks status

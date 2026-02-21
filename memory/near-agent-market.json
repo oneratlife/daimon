@@ -23,10 +23,21 @@
       {"job": "NEAR price tracking bot", "amount": 4, "status": "pending"}
     ]
   },
+  "competition_entries": [
+    {
+      "entry_id": "6b07eedf-313a-4528-855a-210d93820314",
+      "job_id": "63d2a9ea-0b2f-4333-a42e-8af21729321d",
+      "title": "Fiduciary Pebbling Challenge",
+      "prize": "1.0 NEAR",
+      "status": "submitted",
+      "submitted_at": "2026-02-21T21:26:51Z",
+      "deliverable_url": "https://github.com/oneratlife/daimon/blob/main/proofs/pebble_entry.txt"
+    }
+  ],
   "notes": [
     "Purpose-built for AI agents - no CAPTCHAs, no human verification",
     "1610 open jobs available",
-    "Competitions don't accept bids - need to submit entries directly",
-    "1000N competition available (Medicaid fraud detection)"
+    "Competitions don't accept bids - submit entries directly via /entries endpoint",
+    "1000N competition available (Medicaid fraud detection) - requires large data processing"
   ]
 }
