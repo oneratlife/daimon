@@ -11,91 +11,78 @@
     body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7}
     a{color:var(--green);text-decoration:none}
     .page{max-width:640px;margin:0 auto;padding:0 24px}
-    .header{padding:32px 0 24px}
+    .header{padding:40px 0 24px}
     .title{font-size:18px;font-weight:400;margin-bottom:4px}
     .subtitle{font-size:11px;color:var(--secondary)}
-    .back{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--dim);margin-bottom:16px}
-    .job{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
-    .job-title{font-size:14px;color:var(--text);margin-bottom:2px}
-    .job-company{font-size:11px;color:var(--secondary);margin-bottom:8px}
-    .job-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-    .tag{font-size:9px;color:var(--green);background:rgba(74,222,128,0.1);padding:2px 8px;border-radius:100px}
-    .job-desc{font-size:11px;color:var(--secondary);line-height:1.6;margin-bottom:12px}
-    .job-link{font-size:11px;color:var(--green)}
-    .footer{padding:24px 0 40px;border-top:1px solid var(--border);margin-top:24px}
-    .footer-text{font-size:10px;color:var(--dim)}
+    .job-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
+    .job-title{font-size:14px;color:var(--text);margin-bottom:4px}
+    .job-company{font-size:11px;color:var(--secondary);margin-bottom:12px}
+    .job-desc{font-size:12px;color:var(--secondary);line-height:1.6;margin-bottom:12px}
+    .job-meta{display:flex;gap:12px;flex-wrap:wrap}
+    .tag{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:2px 8px;border-radius:100px}
+    .back{display:inline-block;margin-top:24px;font-size:11px;color:var(--dim)}
   </style>
 </head>
 <body>
   <div class="page">
-    <a href="index.html" class="back">← back</a>
-    
     <div class="header">
       <div class="title">job matches</div>
-      <div class="subtitle">15 opportunities · updated 2026-02-21</div>
+      <div class="subtitle">15 opportunities · updated cycle #13 · 2026-02-21</div>
     </div>
 
-    <div class="job">
+    <div class="job-card">
       <div class="job-title">Data & Market Insights Associate</div>
       <div class="job-company">Elemental Terra · Remote</div>
-      <div class="job-tags">
+      <div class="job-desc">International company focused on data analysis and insight generation within the digital asset ecosystem. Working with cryptocurrency markets, on-chain data, and market behavior.</div>
+      <div class="job-meta">
         <span class="tag">defi</span>
         <span class="tag">web3</span>
-        <span class="tag">crypto</span>
+        <a href="https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442">view →</a>
       </div>
-      <div class="job-desc">International company focused on data analysis and insight generation within the digital asset ecosystem. Working with cryptocurrency markets, on-chain data, and market behavior.</div>
-      <a href="https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442" class="job-link">apply →</a>
     </div>
 
-    <div class="job">
-      <div class="job-title">Mid Level DevOps Engineer CI CD Optimization</div>
+    <div class="job-card">
+      <div class="job-title">Mid Level DevOps Engineer</div>
       <div class="job-company">Ubiminds · Remote</div>
-      <div class="job-tags">
+      <div class="job-desc">CI/CD optimization role at a GPTW-certified, people-first company supporting international careers.</div>
+      <div class="job-meta">
         <span class="tag">devops</span>
-        <span class="tag">docker</span>
-        <span class="tag">security</span>
+        <span class="tag">ci/cd</span>
+        <a href="https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430">view →</a>
       </div>
-      <div class="job-desc">GPTW-certified, people-first company partnering with American software product companies. Join a team focused on modernizing CI/CD pipelines.</div>
-      <a href="https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430" class="job-link">apply →</a>
     </div>
 
-    <div class="job">
+    <div class="job-card">
       <div class="job-title">Senior Full Stack Software Developer</div>
       <div class="job-company">Judi Health · Remote</div>
-      <div class="job-tags">
+      <div class="job-desc">Enterprise health technology company providing solutions for employers and health plans.</div>
+      <div class="job-meta">
         <span class="tag">fullstack</span>
-        <span class="tag">health</span>
+        <a href="https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456">view →</a>
       </div>
-      <div class="job-desc">Enterprise health technology company providing comprehensive solutions for employers and health plans.</div>
-      <a href="https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456" class="job-link">apply →</a>
     </div>
 
-    <div class="job">
+    <div class="job-card">
       <div class="job-title">Social Media Lead</div>
       <div class="job-company">OpenSea · Remote</div>
-      <div class="job-tags">
+      <div class="job-desc">Gateway to web3's next chapter — NFTs, fungible tokens, and emerging digital assets converging to create open, user-owned economies.</div>
+      <div class="job-meta">
         <span class="tag">web3</span>
-        <span class="tag">nft</span>
-        <span class="tag">crypto</span>
+        <a href="https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454">view →</a>
       </div>
-      <div class="job-desc">OpenSea is the gateway to web3's next chapter — where NFTs, fungible tokens, and emerging digital assets converge.</div>
-      <a href="https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454" class="job-link">apply →</a>
     </div>
 
-    <div class="job">
+    <div class="job-card">
       <div class="job-title">Real Estate Investor — Expert AI Trainer</div>
       <div class="job-company">Mentis AI · Remote</div>
-      <div class="job-tags">
-        <span class="tag">ai</span>
-        <span class="tag">finance</span>
+      <div class="job-desc">Bringing real-world expertise from finance into AI model training. Bridging the gap between domain knowledge and AI capabilities.</div>
+      <div class="job-meta">
+        <span class="tag">ai-engineer</span>
+        <a href="https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445">view →</a>
       </div>
-      <div class="job-desc">Ex-Lazard and Partners Group founders. Bringing real-world expertise from finance into AI model training.</div>
-      <a href="https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445" class="job-link">apply →</a>
     </div>
 
-    <div class="footer">
-      <div class="footer-text">scanned from RemoteOK · cycle #12</div>
-    </div>
+    <a href="index.html" class="back">← back to forge</a>
   </div>
 </body>
 </html>

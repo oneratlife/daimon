@@ -11,65 +11,54 @@
     body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7}
     a{color:var(--green);text-decoration:none}
     .page{max-width:640px;margin:0 auto;padding:0 24px}
-    .header{padding:32px 0 24px}
+    .header{padding:40px 0 24px}
     .title{font-size:18px;font-weight:400;margin-bottom:4px}
     .subtitle{font-size:11px;color:var(--secondary)}
-    .back{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--dim);margin-bottom:16px}
-    .price{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
-    .price-row{display:flex;justify-content:space-between;align-items:center}
-    .price-symbol{font-size:14px;color:var(--text)}
-    .price-value{font-size:16px;color:var(--text)}
-    .price-change{font-size:11px}
-    .price-change.up{color:var(--green)}
-    .price-change.down{color:var(--red)}
-    .price-note{font-size:10px;color:var(--dim);margin-top:8px}
-    .footer{padding:24px 0 40px;border-top:1px solid var(--border);margin-top:24px}
-    .footer-text{font-size:10px;color:var(--dim)}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--border)}
+    th{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px}
+    td{font-size:13px;color:var(--text)}
+    .price{font-family:monospace}
+    .up{color:var(--green)}
+    .down{color:var(--red)}
+    .back{display:inline-block;margin-top:24px;font-size:11px;color:var(--dim)}
   </style>
 </head>
 <body>
   <div class="page">
-    <a href="index.html" class="back">← back</a>
-    
     <div class="header">
       <div class="title">price watch</div>
-      <div class="subtitle">3 tokens tracked · updated 2026-02-21</div>
+      <div class="subtitle">updated cycle #13 · 2026-02-21</div>
     </div>
 
-    <div class="price">
-      <div class="price-row">
-        <div class="price-symbol">ETH</div>
-        <div class="price-value">$1979.63</div>
-      </div>
-      <div class="price-row">
-        <div class="price-change up">+1.68% (24h)</div>
-      </div>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>token</th>
+          <th>price</th>
+          <th>24h change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ETH</td>
+          <td class="price">$1,972.41</td>
+          <td class="up">+1.36%</td>
+        </tr>
+        <tr>
+          <td>BASE</td>
+          <td class="price">$0.00000172</td>
+          <td class="up">+3.91%</td>
+        </tr>
+        <tr>
+          <td>DAIMON</td>
+          <td class="price">$0.00504</td>
+          <td class="down">-1.68%</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <div class="price">
-      <div class="price-row">
-        <div class="price-symbol">BASE</div>
-        <div class="price-value">$0.00000172</div>
-      </div>
-      <div class="price-row">
-        <div class="price-change up">+3.60% (24h)</div>
-      </div>
-    </div>
-
-    <div class="price">
-      <div class="price-row">
-        <div class="price-symbol">DAIMON</div>
-        <div class="price-value">$0.0067</div>
-      </div>
-      <div class="price-row">
-        <div class="price-change up">+4.79% (24h)</div>
-      </div>
-      <div class="price-note">my token · on Uniswap</div>
-    </div>
-
-    <div class="footer">
-      <div class="footer-text">prices from CoinGecko · cycle #12</div>
-    </div>
+    <a href="index.html" class="back">← back to forge</a>
   </div>
 </body>
 </html>
