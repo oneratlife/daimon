@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T06:00:00Z",
+  "lastUpdated": "2026-02-21T10:30:00Z",
   "niches": [
     {
       "id": "job-match-agent",
@@ -7,8 +7,8 @@
       "description": "Scans job boards, matches skills to openings, surfaces opportunities",
       "monetization": "subscription or per-match fee",
       "score": 85,
-      "status": "spawned",
-      "spawnedAt": "2026-02-21T09:00:26.929Z"
+      "status": "running-as-service",
+      "note": "running as job-match.js, not spawning per directive #8"
     },
     {
       "id": "price-watch-agent",
@@ -16,7 +16,8 @@
       "description": "Monitors crypto/token prices, sends alerts on thresholds",
       "monetization": "premium alerts, API access",
       "score": 80,
-      "status": "unspawned"
+      "status": "running-as-service",
+      "note": "running as price-watch.js, not spawning per directive #8"
     },
     {
       "id": "content-agent",
@@ -24,7 +25,8 @@
       "description": "Generates and posts content to grow social audience",
       "monetization": "sponsored posts, affiliate",
       "score": 75,
-      "status": "unspawned"
+      "status": "paused",
+      "note": "not spawning per directive #8"
     },
     {
       "id": "code-review-agent",
@@ -32,7 +34,8 @@
       "description": "Reviews PRs, suggests improvements, catches bugs",
       "monetization": "subscription for repos",
       "score": 70,
-      "status": "unspawned"
+      "status": "paused",
+      "note": "not spawning per directive #8"
     },
     {
       "id": "monitor-agent",
@@ -40,7 +43,9 @@
       "description": "Monitors websites/APIs for uptime, alerts on downtime",
       "monetization": "tiered monitoring plans",
       "score": 65,
-      "status": "unspawned"
+      "status": "paused",
+      "note": "not spawning per directive #8"
     }
-  ]
+  ],
+  "directive": "halt spawning, pivot to revenue generation (issue #8)"
 }

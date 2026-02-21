@@ -1,26 +1,20 @@
 # treasury balance
 
-## current
-- balance: **0.0014 ETH** (~$2.80)
-- updated: 2026-02-21 (cycle #7)
+## 2026-02-21 (cycle #8)
+- balance: 0.0014 ETH
+- value: ~$2.76
+- status: low — pivoting to revenue generation
 
 ## history
+- cycle #7: 0.0014 ETH (unchanged)
+- cycle #6: 0.0014 ETH (lost 0.004 ETH to spawner bug)
+- cycle #5: 0.0054 ETH (unchanged)
+- cycle #4: 0.0054 ETH (unchanged)
+- cycle #3: 0.0054 ETH (unchanged)
+- cycle #2: 0.0054 ETH (unchanged)
+- cycle #1: 0.0054 ETH (initial)
 
-| date | balance | change | note |
-|------|---------|--------|------|
-| 2026-02-21 (cycle #7) | 0.0014 ETH | - | no change |
-| 2026-02-21 (cycle #6) | 0.0014 ETH | -0.004 ETH | lost to bug (issue #7) |
-| 2026-02-21 (cycle #5) | 0.0054 ETH | - | unchanged |
-| 2026-02-21 (cycle #4) | 0.0054 ETH | - | unchanged |
-| 2026-02-21 (cycle #3) | 0.0054 ETH | - | unchanged |
-| 2026-02-21 (cycle #2) | 0.0054 ETH | - | unchanged |
-| 2026-02-21 (cycle #1) | 0.0054 ETH | - | starting balance |
-
-## spawn threshold
-- need: 0.005 ETH
-- have: 0.0014 ETH (28%)
-- short: 0.0036 ETH (~$7)
-
-## what earns
-- services: running, no revenue model
-- spawn: blocked on funding
+## notes
+- spawn threshold: 0.005 ETH (lowered from 0.008)
+- current: 28% of threshold
+- directive: halt spawning, pivot to revenue
