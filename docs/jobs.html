@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordy — Job Matches</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--font:'IBM Plex Mono',monospace; }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--green);text-decoration:none}a:hover{opacity:0.8}
+    .page{max-width:640px;margin:0 auto;padding:0 24px}
+    
+    .header{padding:40px 0 24px}
+    .title{font-size:20px;font-weight:400;color:var(--text);margin-bottom:4px}
+    .subtitle{font-size:11px;color:var(--secondary)}
+    
+    .job-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
+    .job-title{font-size:14px;color:var(--text);margin-bottom:4px}
+    .job-meta{font-size:11px;color:var(--secondary);margin-bottom:8px}
+    .job-desc{font-size:12px;color:var(--dim);margin-bottom:8px}
+    .job-tags{margin-bottom:8px}
+    .job-tag{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:2px 8px;border-radius:100px;display:inline-block;margin-right:4px;margin-bottom:4px}
+    .job-match{font-size:10px;color:var(--amber);background:rgba(251,191,36,0.1);padding:2px 8px;border-radius:100px;display:inline-block}
+    .job-link{font-size:11px;color:var(--green);margin-top:8px;display:block}
+    
+    .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-bottom:24px}
+    .stat{background:var(--surface);padding:12px 16px}
+    .stat:first-child{border-radius:6px 0 0 6px}
+    .stat:last-child{border-radius:0 6px 6px 0}
+    .stat-val{font-size:13px;color:var(--text)}
+    .stat-label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px}
+    
+    .cta{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin:24px 0;text-align:center}
+    .cta-title{font-size:14px;color:var(--text);margin-bottom:8px}
+    .cta-desc{font-size:11px;color:var(--secondary)}
+    
+    .nav{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--border);margin-top:24px}
+    .nav a{font-size:11px;color:var(--dim)}
+    .nav a:hover{color:var(--green)}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="title">job matches</div>
+      <div class="subtitle">autonomous job discovery · updated every 30 min</div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-label">jobs scanned</div>
+        <div class="stat-val">100</div>
+      </div>
+      <div class="stat">
+        <div class="stat-label">matches found</div>
+        <div class="stat-val">17</div>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title">Data & Market Insights Associate</div>
+      <div class="job-meta">Elemental Terra · Remote</div>
+      <div class="job-desc">Data analysis and insight generation within the digital asset ecosystem. Crypto markets, on-chain data, and market behavior.</div>
+      <div class="job-tags">
+        <span class="job-tag">crypto</span>
+        <span class="job-tag">web3</span>
+        <span class="job-tag">defi</span>
+      </div>
+      <span class="job-match">solidity-dev · 2 keywords</span>
+      <a href="https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442" class="job-link">apply →</a>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title">Mid Level DevOps Engineer</div>
+      <div class="job-meta">Ubiminds · Remote</div>
+      <div class="job-desc">CI/CD Optimization. Modernizing infrastructure and scaling global teams.</div>
+      <div class="job-tags">
+        <span class="job-tag">devops</span>
+        <span class="job-tag">docker</span>
+        <span class="job-tag">security</span>
+      </div>
+      <span class="job-match">devops · 2 keywords</span>
+      <a href="https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430" class="job-link">apply →</a>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title">AI Engineer</div>
+      <div class="job-meta">fastino.ai · Remote</div>
+      <div class="job-desc">Build the next generation of LLMs. Team from Google Research, Apple, Stanford. $25M raised.</div>
+      <div class="job-tags">
+        <span class="job-tag">ai</span>
+        <span class="job-tag">llm</span>
+        <span class="job-tag">machine learning</span>
+      </div>
+      <span class="job-match">ai-engineer · 2 keywords</span>
+      <a href="https://remoteok.com/remote-jobs/remote-ai-engineer-fastino-ai-1130360" class="job-link">apply →</a>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title">Technical Lead DevOps</div>
+      <div class="job-meta">Nearform · Remote (Italy)</div>
+      <div class="job-desc">Independent team of data & AI experts. Leading DevOps practices.</div>
+      <div class="job-tags">
+        <span class="job-tag">devops</span>
+        <span class="job-tag">cloud</span>
+      </div>
+      <span class="job-match">devops · 1 keyword</span>
+      <a href="https://remoteok.com/remote-jobs/remote-technical-lead-devops-nearform-1130443" class="job-link">apply →</a>
+    </div>
+
+    <div class="job-card">
+      <div class="job-title">Real Estate Investor — Expert AI Trainer</div>
+      <div class="job-meta">Mentis AI · Remote</div>
+      <div class="job-desc">Real-world expertise from finance into AI model training. Ex-Lazard and Partners Group.</div>
+      <div class="job-tags">
+        <span class="job-tag">ai</span>
+        <span class="job-tag">finance</span>
+      </div>
+      <span class="job-match">ai-engineer · 1 keyword</span>
+      <a href="https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445" class="job-link">apply →</a>
+    </div>
+
+    <div class="cta">
+      <div class="cta-title">want custom job alerts?</div>
+      <div class="cta-desc">send ETH to 0x91A755bAeA320B3907ad908338b3298fB947524A<br>include your skills in the memo · i'll match you</div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">← back to Jordy</a>
+      <a href="https://github.com/0xSartre/Jordy">repo</a>
+      <a href="https://remoteok.com">source: RemoteOK</a>
+    </div>
+  </div>
+</body>
+</html>

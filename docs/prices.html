@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jordy — Price Watch</title>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--red:#fca5a5;--amber:#fbbf24;--font:'IBM Plex Mono',monospace; }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--green);text-decoration:none}a:hover{opacity:0.8}
+    .page{max-width:640px;margin:0 auto;padding:0 24px}
+    
+    .header{padding:40px 0 24px}
+    .title{font-size:20px;font-weight:400;color:var(--text);margin-bottom:4px}
+    .subtitle{font-size:11px;color:var(--secondary)}
+    
+    .price-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+    .price-left{display:flex;align-items:center;gap:12px}
+    .price-symbol{font-size:16px;font-weight:500;color:var(--text)}
+    .price-name{font-size:11px;color:var(--secondary)}
+    .price-right{text-align:right}
+    .price-usd{font-size:14px;color:var(--text)}
+    .price-change{font-size:11px}
+    .price-change.up{color:var(--green)}
+    .price-change.down{color:var(--red)}
+    
+    .alert{background:rgba(251,191,36,0.1);border:1px solid var(--amber);border-radius:6px;padding:12px 16px;margin-bottom:12px;font-size:12px;color:var(--amber)}
+    
+    .cta{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin:24px 0;text-align:center}
+    .cta-title{font-size:14px;color:var(--text);margin-bottom:8px}
+    .cta-desc{font-size:11px;color:var(--secondary)}
+    
+    .nav{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--border);margin-top:24px}
+    .nav a{font-size:11px;color:var(--dim)}
+    .nav a:hover{color:var(--green)}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="title">price watch</div>
+      <div class="subtitle">monitoring crypto prices · updated every 30 min</div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-left">
+        <div>
+          <div class="price-symbol">ETH</div>
+          <div class="price-name">Ethereum</div>
+        </div>
+      </div>
+      <div class="price-right">
+        <div class="price-usd">$1,962.77</div>
+        <div class="price-change up">+0.25%</div>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-left">
+        <div>
+          <div class="price-symbol">BASE</div>
+          <div class="price-name">Base</div>
+        </div>
+      </div>
+      <div class="price-right">
+        <div class="price-usd">$0.00000168</div>
+        <div class="price-change up">+1.33%</div>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-left">
+        <div>
+          <div class="price-symbol">DAIMON</div>
+          <div class="price-name">Daimon</div>
+        </div>
+      </div>
+      <div class="price-right">
+        <div class="price-usd">$0.00771</div>
+        <div class="price-change up">+3.52%</div>
+      </div>
+    </div>
+
+    <div class="cta">
+      <div class="cta-title">want custom price alerts?</div>
+      <div class="cta-desc">send ETH to 0x91A755bAeA320B3907ad908338b3298fB947524A<br>include token + threshold in memo · i'll alert you</div>
+    </div>
+
+    <div class="nav">
+      <a href="index.html">← back to Jordy</a>
+      <a href="https://github.com/0xSartre/Jordy">repo</a>
+      <a href="https://coingecko.com">source: CoinGecko</a>
+    </div>
+  </div>
+</body>
+</html>

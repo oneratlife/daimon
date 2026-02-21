@@ -1,0 +1,726 @@
+{
+  "lastScanned": "2026-02-21T06:07:19.738Z",
+  "totalJobs": 17,
+  "matches": [
+    {
+      "job": {
+        "id": "1130442",
+        "title": "Data & Market Insights Associate",
+        "company": "Elemental Terra",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442",
+        "description": "  Begini is an international company focused on data analysis and insight generation within the digital asset ecosystem. We work with cryptocurrency markets, on-chain data, and market behavior to support structured decision-making and long-term analytical processes.  We are seeking a Data &amp; Market Insights Associate (Crypto Assets) to join our remote team. This role is designed for individuals interested in cryptocurrency markets, data interpretation, and analytical workflows. The position o",
+        "tags": [
+          "other",
+          "crypto",
+          "finance",
+          "web3",
+          "bitcoin",
+          "education",
+          "blockchain",
+          "defi"
+        ],
+        "posted": "2026-02-19T15:31:41+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 2,
+        "matches": [
+          "defi",
+          "web3"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 2,
+          "matches": [
+            "defi",
+            "web3"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130430",
+        "title": "Mid Level DevOps Engineer CI CD Optimization",
+        "company": "Ubiminds",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430",
+        "description": "  Info on the Mid-Level DevOps Engineer - CI/CD Optimization (466) role      Ready to take the next step in your international career? We can support you!     Ubiminds is a GPTW-certified, people-first company that partners with American software product companies to scale their global teams. We curate top LATAM talent and connect professionals with long-term, high-impact opportunities while providing full employer-of-record support.     In this role, youâll join a team focused on  modernizing",
+        "tags": [
+          "design",
+          "hr",
+          "system",
+          "security",
+          "docker",
+          "recruiter",
+          "support",
+          "developer",
+          "software",
+          "growth",
+          "code",
+          "devops",
+          "management",
+          "reliability",
+          "engineer",
+          "engineering",
+          "full-time",
+          "digital nomad"
+        ],
+        "posted": "2026-02-19T00:05:19+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 2,
+        "matches": [
+          "devops",
+          "docker"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 2,
+          "matches": [
+            "devops",
+            "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130360",
+        "title": "AI Engineer",
+        "company": "fastino.ai",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-ai-engineer-fastino-ai-1130360",
+        "description": "  Full-time | Remote    Introduction:     Join us at Fastino as we build the next generation of LLMs. Our team, boasting alumni from Google Research, Apple, Stanford, and Cambridge is on a mission to develop specialized, efficient AI.    Fastino's GLiNER family of open source models has been downloaded more than 5 million times and is used by companies such as NVIDIA, Meta, and Airbnb    Fastino has raised $25M (as featured in TechCrunch) through our seed round and is backed by leading investors",
+        "tags": [
+          "docker",
+          "ceo",
+          "developer",
+          "api",
+          "operational",
+          "reliability",
+          "engineer",
+          "engineering",
+          "digital nomad"
+        ],
+        "posted": "2026-02-18T00:00:33+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 2,
+        "matches": [
+          "ai engineer",
+          "llm"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 2,
+          "matches": [
+            "ai engineer",
+            "llm"
+          ]
+        },
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130445",
+        "title": "Real Estate Investor â Expert AI Trainer",
+        "company": "Mentis AI",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445",
+        "description": " Our founders are ex-Lazard and Partners Group, and we're headquartered in London and San Francisco. Mentis AI brings real-world expertise from finance into AI model training. We bridge the gap between human and artificial intelligence.     About this role:  You will bring institutional real estate investment expertise to an AI training project covering acquisitions, underwriting, asset management, and fund-level analytics capturing how top REPE professionals evaluate opportunities, structure tr",
+        "tags": [
+          "trainer",
+          "training",
+          "financial",
+          "investment",
+          "investor",
+          "finance",
+          "analytics",
+          "non tech"
+        ],
+        "posted": "2026-02-19T16:01:54+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "artificial intelligence"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "artificial intelligence"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130443",
+        "title": "Technical Lead DevOps",
+        "company": "Nearform",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-technical-lead-devops-nearform-1130443",
+        "description": "  Technical Lead - DevOps (Perm, Italy, Remote)  \n  This is a permanent full time remote opportunity for those based in Italy.    About Nearform   \n Nearform is an independent team of data &amp; AI experts, engineers, and designers who build intelligent digital solutions and capability at pace. We create AI-enabled solutions that enhance digital experiences, empower developers, and deliver measurable results. In these ways, we partner with ambitious enterprises to deliver enduring impact. \n Our ",
+        "tags": [
+          "technical",
+          "devops",
+          "lead",
+          "senior",
+          "engineering"
+        ],
+        "posted": "2026-02-19T16:01:35+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 1,
+        "matches": [
+          "devops"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130436",
+        "title": "DevOps Engineer",
+        "company": "InfStones",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-devops-engineer-infstones-1130436",
+        "description": "  Job Position: DevOps Engineer    Location: Dallas, TX, USA (Remote Acceptable - USA Applicants Only)    Company:  https://infstones.com/     Contact:    recruiter-usa@infstones.com        About Company   InfStones is an advanced, enterprise-grade Platform as a Service (PaaS) blockchain infrastructure provider trusted by the top blockchain companies in the world. InfStonesâ AI-based infrastructure provides developers worldwide with a rugged, powerful node management platform alongside an easy",
+        "tags": [
+          "amazon",
+          "web3",
+          "system",
+          "security",
+          "support",
+          "software",
+          "testing",
+          "test",
+          "code",
+          "qa",
+          "devops",
+          "serverless",
+          "cloud",
+          "git",
+          "node",
+          "administrator",
+          "management",
+          "reliability",
+          "engineer",
+          "linux",
+          "full-time"
+        ],
+        "posted": "2026-02-19T08:00:02+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "web3"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "web3"
+          ]
+        },
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "node"
+          ]
+        },
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130433",
+        "title": "Job 27602 Mid level Developer NodeJS Brazil",
+        "company": "CI&amp;T",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-job-27602-mid-level-developer-nodejs-brazil-ciampt-1130433",
+        "description": "  Somos especialistas em  transformaÃ§Ã£o tecnolÃ³gica , unindo expertise humana Ã  IA para criar soluÃ§Ãµes tech escalÃ¡veis. Com mais de 8,000 CI&amp;Ters ao redor do mundo, jÃ¡ formamos parcerias com mais de 1,000 clientes durante nossos 30 anos de histÃ³ria. InteligÃªncia Artificial Ã© nossa realidade.        Importante : se vocÃª reside na RegiÃ£o Metropolitana de Campinas, sua presenÃ§a nos escritÃ³rios da cidade serÃ¡ obrigatÃ³ria, conforme a polÃ­tica de frequencia vigente.       Sua mis",
+        "tags": [
+          "developer",
+          "javascript",
+          "nodejs",
+          "cloud",
+          "api",
+          "digital nomad"
+        ],
+        "posted": "2026-02-19T00:05:44+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "node"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "node"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130417",
+        "title": "Project Coordinator",
+        "company": "Caylent",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-project-coordinator-caylent-1130417",
+        "description": "Caylent is a cloud native services company that helps organizations bring the best out of their people and technology using Amazon Web Services (AWS). We provide a full-range of AWS services including workload migrations and modernization, cloud native application development, DevOps, data engineering, security and compliance, and everything in between.\n\nAt Caylent, our people always come first.  We are a global company and operate fully remote with employees in Canada, the United States, and La",
+        "tags": [
+          "amazon",
+          "security",
+          "technical",
+          "coordinator",
+          "web",
+          "scrum",
+          "cloud",
+          "management",
+          "senior",
+          "engineering",
+          "recruitment"
+        ],
+        "posted": "2026-02-19T00:03:25+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 1,
+        "matches": [
+          "devops"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130404",
+        "title": "Senior Content Program Strategist",
+        "company": "Pulley",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-content-program-strategist-pulley-1130404",
+        "description": "âBefore you leave the house, look in the mirror and take one thing off.â\n- Coco Chanel\n\nThe internet does not have a content problem. It has a judgment problem. And with the rise of AI, the cost of publishing has collapsed while the cost of trust has only increased. The next generation of great content marketers wonât be defined by how much they ship, but by their decisions around what to ship.\n\nPulley is looking for a Senior Content Program Strategist to define and mature our content syst",
+        "tags": [
+          "system",
+          "strategist",
+          "management",
+          "content",
+          "senior",
+          "marketing"
+        ],
+        "posted": "2026-02-19T00:01:39+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "defi"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "defi"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130380",
+        "title": "Senior Manager Site Reliability Engineer",
+        "company": "Ping Identity",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-manager-site-reliability-engineer-ping-identity-1130380",
+        "description": "   About Ping Identity:&nbsp;  \n At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we provide our customers. It's something that inspires our company. People don't come here to join a culture that's built on digital freedom. They come to cultivate it.&nbsp; \n Our intelligent, cloud identity platform lets people shop, work, bank, and interact wherever and however they wan",
+        "tags": [
+          "manager",
+          "saas",
+          "devops",
+          "cloud",
+          "senior",
+          "operations",
+          "operational",
+          "reliability",
+          "engineer"
+        ],
+        "posted": "2026-02-18T00:03:36+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 1,
+        "matches": [
+          "devops"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130378",
+        "title": "Content Manager",
+        "company": "NMI",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-content-manager-nmi-1130378",
+        "description": "NMI is looking for a Content Manager to lead the development and execution of the company's content strategy as we continue to grow our leadership position in embedded payments and fintech.\n\nThis role owns content across the full spectrum, from strategic thought leadership to practical, product-led content. You will help define how NMI shows up to its core audiences, including ISOs, banks, payments professionals, ISVs and developers, ensuring our content educates, engages and builds credibility ",
+        "tags": [
+          "manager",
+          "embedded",
+          "technical",
+          "writer",
+          "support",
+          "fintech",
+          "strategy",
+          "lead",
+          "content",
+          "senior",
+          "marketing"
+        ],
+        "posted": "2026-02-18T00:03:19+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "defi"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "defi"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130376",
+        "title": "Senior Site Reliability Engineer",
+        "company": "Ping Identity",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-site-reliability-engineer-ping-identity-1130376",
+        "description": "   About Ping Identity:&nbsp;  \n At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we provide our customers. It's something that inspires our company. People don't come here to join a culture that's built on digital freedom. They come to cultivate it.&nbsp; \n Our intelligent, cloud identity platform lets people shop, work, bank, and interact wherever and however they wan",
+        "tags": [
+          "design",
+          "software",
+          "devops",
+          "cloud",
+          "senior",
+          "operations",
+          "reliability",
+          "engineer",
+          "digital nomad"
+        ],
+        "posted": "2026-02-18T00:03:04+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 1,
+        "matches": [
+          "devops"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130372",
+        "title": "Full Stack Software Engineer",
+        "company": "Cala Health",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-full-stack-software-engineer-cala-health-1130372",
+        "description": "   About Cala  \n At Cala, we're working to free people from the burden of chronic disease. We began by creating the first non-invasive prescription therapy for hand tremor. After years of careful fine-tuning and improvements, we released Cala kIQ â our most sophisticated therapy yet. Our products have empowered thousands of people to get back to their lives with confidence and ease. \n But we won't stop there. Our pioneering technology can be applied across neurology, cardiology, and so much mo",
+        "tags": [
+          "software",
+          "frontend",
+          "full-stack",
+          "medical",
+          "engineer",
+          "engineering",
+          "backend",
+          "full-time"
+        ],
+        "posted": "2026-02-18T00:02:33+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "full stack"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130366",
+        "title": "Senior Software Engineer Angular .net",
+        "company": "3Pillar",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-software-engineer-angular-net-3pillar-1130366",
+        "description": "  Elevate your expertise to new heights at 3Pillar, the premier destination for trailblazing senior software engineers like yourself. Picture collaborating with industry leaders, spearheading transformative projects that redefine urban living, establishing new media channels for enterprise companies, or driving innovation in healthcare. Our mission is to revolutionize the tech landscape, and your skills are integral to achieving this ambitious goal. Your role extends beyond the realm of code com",
+        "tags": [
+          "software",
+          "design",
+          "salesforce",
+          "architect",
+          "technical",
+          "growth",
+          "code",
+          "web",
+          "cloud",
+          "angular",
+          "api",
+          "management",
+          "lead",
+          "senior",
+          "junior",
+          "health",
+          "engineer",
+          "engineering",
+          "backend",
+          "digital nomad"
+        ],
+        "posted": "2026-02-18T00:01:39+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "defi"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "defi"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130363",
+        "title": "Director CMC Program Management",
+        "company": "Kyverna Therapeutics",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-director-cmc-program-management-kyverna-therapeutics-1130363",
+        "description": "  Kyverna Therapeutics is a patient-centered, clinical-stage biopharmaceutical company developing cell therapies for patients suffering from autoimmune diseases. Guided by our core values, Stay True to Why, Collaborate to Accelerate, Lead with Clarity, Boldly Innovative, and Own the Outcome, we are committed to transforming the future of treatment for autoimmune disease. Join us at the forefront of cell therapy innovation and help redefine whatâs possible.    &nbsp;   Title: Sr. Director, CMC ",
+        "tags": [
+          "director",
+          "technical",
+          "support",
+          "finance",
+          "management",
+          "lead",
+          "senior",
+          "junior",
+          "operations"
+        ],
+        "posted": "2026-02-18T00:01:02+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "defi"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "defi"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130359",
+        "title": "Senior Marketing Manager Website Experience",
+        "company": "Zensurance",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-marketing-manager-website-experience-zensurance-1130359",
+        "description": "  About Us:      Zensurance is redefining commercial insurance for Canadian businesses.&nbsp;     As a leading InsurTech, we make getting the right coverage simple, fast, and accessible through a digital-first experience. Our platform combines advanced technology with deep industry expertise to deliver tailored insurance solutions that help businesses thrive.     Zensurance has been recognized for its rapid growth and industry impact:      â  Deloitteâs Technology Fast 50 (2023, 2024, 2025) ",
+        "tags": [
+          "manager",
+          "design",
+          "wordpress",
+          "front-end",
+          "consultant",
+          "technical",
+          "support",
+          "developer",
+          "testing",
+          "growth",
+          "ux",
+          "education",
+          "seo",
+          "leader",
+          "strategy",
+          "content",
+          "senior",
+          "marketing",
+          "sales",
+          "health",
+          "digital nomad"
+        ],
+        "posted": "2026-02-18T00:00:26+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "defi"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "defi"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130352",
+        "title": "Recruiting Partner",
+        "company": "Code.org",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-recruiting-partner-code-org-1130352",
+        "description": "COMPANY PROFILE\n\nCode.org is an education innovation nonprofit dedicated to the vision that every student in every school has the opportunity to learn about artificial intelligence (AI) and computer science (CS) as part of their core K-12 education. We increase participation in AI+CS education by reaching students of all backgrounds where they are â at their skill level, in their schools, and in ways that inspire them to keep learning, with a focus on increasing participation by young women an",
+        "tags": [
+          "students",
+          "education",
+          "recruiting",
+          "non tech"
+        ],
+        "posted": "2026-02-17T16:01:19+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "artificial intelligence"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "artificial intelligence"
+          ]
+        }
+      ]
+    }
+  ]
+}
