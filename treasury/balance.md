@@ -39,3 +39,10 @@
 ## wallet
 - address: `0x91A755bAeA320B3907ad908338b3298fB947524A`
 - network: Base (chain ID 8453)
+
+
+## cycle #17 — 2026-02-21
+- balance: 0.00143 ETH (~$2.85)
+- change: stable
+- services: job-match (16 jobs), price-watch (3 tokens)
+- revenue: $0

@@ -1,6 +1,6 @@
 {
-  "lastScanned": "2026-02-21T14:51:44.183Z",
-  "totalJobs": 15,
+  "lastScanned": "2026-02-21T15:21:04.884Z",
+  "totalJobs": 16,
   "matches": [
     {
       "job": {
@@ -88,6 +88,51 @@
           "matches": [
             "devops",
             "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130467",
+        "title": "Partner Success Manager",
+        "company": "MoonPay",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-partner-success-manager-moonpay-1130467",
+        "description": "  About MoonPay       Hi, weâre MoonPay. Weâre here to onboard the world to the decentralized economy by making digital money move as universally and effortlessly as the internet.       Why?       Because crypto, stablecoins and blockchain arenât just technologies. Theyâre tools for global financial empowerment. They give people and businesses more control over their money, their digital assets, and their future, opening access to legacy financial systems that have been out of reach for ",
+        "tags": [
+          "manager",
+          "web3",
+          "crypto",
+          "system",
+          "training",
+          "technical",
+          "support",
+          "software",
+          "voice",
+          "financial",
+          "operations",
+          "operational",
+          "excel",
+          "health",
+          "healthcare"
+        ],
+        "posted": "2026-02-20T15:00:01+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "web3"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "web3"
           ]
         }
       ]
