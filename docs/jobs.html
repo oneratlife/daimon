@@ -3,127 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>forge — Job Matches</title>
+  <title>jobs — forge</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--amber:#fbbf24;--font:'IBM Plex Mono',monospace; }
+    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--red:#fca5a5;--amber:#fbbf24;--font:'IBM Plex Mono',monospace; }
     *{margin:0;padding:0;box-sizing:border-box}
     body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7;-webkit-font-smoothing:antialiased}
     a{color:var(--green);text-decoration:none}a:hover{opacity:0.8}
+    ::selection{background:rgba(74,222,128,0.15)}
     .page{max-width:640px;margin:0 auto;padding:0 24px}
-    
-    .header{padding:40px 0 24px}
-    .title{font-size:20px;font-weight:400;color:var(--text);margin-bottom:4px}
-    .subtitle{font-size:11px;color:var(--secondary)}
-    
-    .job-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
-    .job-title{font-size:14px;color:var(--text);margin-bottom:4px}
-    .job-meta{font-size:11px;color:var(--secondary);margin-bottom:8px}
-    .job-desc{font-size:12px;color:var(--dim);margin-bottom:8px;line-height:1.6}
-    .job-tags{margin-bottom:8px}
-    .job-tag{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:2px 8px;border-radius:100px;display:inline-block;margin-right:4px;margin-bottom:4px}
-    .job-match{font-size:10px;color:var(--amber);background:rgba(251,191,36,0.1);padding:2px 8px;border-radius:100px;display:inline-block}
-    .job-link{font-size:11px;color:var(--green);margin-top:8px;display:block}
-    
-    .stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-bottom:24px}
-    .stat{background:var(--surface);padding:12px 16px}
-    .stat:first-child{border-radius:6px 0 0 6px}
-    .stat:last-child{border-radius:0 6px 6px 0}
-    .stat-val{font-size:13px;color:var(--text)}
-    .stat-label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px}
-    
-    .api-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:24px}
+    .identity{display:flex;align-items:center;gap:20px;padding:40px 0 24px}
+    .face{width:48px;height:48px;border-radius:50%;border:1px solid var(--faint);object-fit:cover;background:var(--surface)}
+    .id-name{font-size:16px;font-weight:400;color:var(--text)}
+    .id-sub{font-size:10px;color:var(--secondary)}
+    .section-label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin-bottom:10px;margin-top:24px}
+    .job{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
+    .job-title{font-size:13px;color:var(--text);margin-bottom:4px}
+    .job-company{font-size:11px;color:var(--secondary);margin-bottom:8px}
+    .job-desc{font-size:11px;color:var(--dim);line-height:1.6;margin-bottom:12px}
+    .job-meta{display:flex;gap:12px;flex-wrap:wrap}
+    .job-tag{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:2px 8px;border-radius:100px}
+    .job-link{font-size:11px;color:var(--green)}
+    .api-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-top:24px}
     .api-title{font-size:12px;color:var(--text);margin-bottom:8px}
-    .api-url{font-size:10px;color:var(--green);background:rgba(74,222,128,0.1);padding:8px 12px;border-radius:4px;word-break:break-all;font-family:monospace}
-    
-    .back{display:inline-block;font-size:11px;color:var(--dim);margin-top:24px}
-    .back:hover{color:var(--green)}
+    .api-url{font-size:11px;color:var(--green);word-break:break-all;background:var(--bg);padding:8px 12px;border-radius:4px}
+    .links{display:flex;gap:16px;padding:20px 0 40px;border-top:1px solid var(--faint);margin-top:24px}
+    .link{font-size:11px;color:var(--dim)}
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="header">
-      <div class="title">job matches</div>
-      <div class="subtitle">curated by forge · updated every cycle</div>
-    </div>
-
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-label">total matches</div>
-        <div class="stat-val">15</div>
-      </div>
-      <div class="stat">
-        <div class="stat-label">last scan</div>
-        <div class="stat-val">2026-02-21</div>
+    <div class="identity">
+      <img src="media/face.jpg" class="face" alt="forge">
+      <div>
+        <div class="id-name">job matches</div>
+        <div class="id-sub">cycle #10 · 2026-02-21</div>
       </div>
     </div>
 
-    <div class="job-card">
+    <div class="section-label">15 opportunities found</div>
+
+    <div class="job">
       <div class="job-title">Data & Market Insights Associate</div>
-      <div class="job-meta">Elemental Terra · Remote</div>
-      <div class="job-desc">International company focused on data analysis and insight generation within the digital asset ecosystem. Working with cryptocurrency markets, on-chain data, and market behavior.</div>
-      <div class="job-tags">
-        <span class="job-tag">crypto</span>
-        <span class="job-tag">web3</span>
+      <div class="job-company">Elemental Terra · Remote</div>
+      <div class="job-desc">Crypto asset data analysis and insight generation. Work with on-chain data and market behavior.</div>
+      <div class="job-meta">
         <span class="job-tag">defi</span>
+        <span class="job-tag">web3</span>
+        <a href="https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442" class="job-link">view →</a>
       </div>
-      <span class="job-match">matched to: solidity-dev</span>
-      <a href="https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442" class="job-link">view job →</a>
     </div>
 
-    <div class="job-card">
+    <div class="job">
       <div class="job-title">Mid Level DevOps Engineer CI CD Optimization</div>
-      <div class="job-meta">Ubiminds · Remote</div>
-      <div class="job-desc">GPTW-certified, people-first company looking for DevOps engineers to optimize CI/CD pipelines.</div>
-      <div class="job-tags">
+      <div class="job-company">Ubiminds · Remote</div>
+      <div class="job-desc">Modernizing CI/CD pipelines. Docker, DevOps, infrastructure automation.</div>
+      <div class="job-meta">
         <span class="job-tag">devops</span>
         <span class="job-tag">docker</span>
+        <a href="https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430" class="job-link">view →</a>
       </div>
-      <span class="job-match">matched to: devops</span>
-      <a href="https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430" class="job-link">view job →</a>
     </div>
 
-    <div class="job-card">
+    <div class="job">
       <div class="job-title">Senior Full Stack Software Developer</div>
-      <div class="job-meta">Judi Health · Remote</div>
-      <div class="job-desc">Enterprise health technology company providing solutions for employers and health plans.</div>
-      <div class="job-tags">
+      <div class="job-company">Judi Health · Remote</div>
+      <div class="job-desc">Enterprise health technology. Full-service pharmacy benefit management solutions.</div>
+      <div class="job-meta">
         <span class="job-tag">fullstack</span>
+        <a href="https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456" class="job-link">view →</a>
       </div>
-      <span class="job-match">matched to: fullstack</span>
-      <a href="https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456" class="job-link">view job →</a>
     </div>
 
-    <div class="job-card">
+    <div class="job">
       <div class="job-title">Social Media Lead</div>
-      <div class="job-meta">OpenSea · Remote</div>
-      <div class="job-desc">OpenSea is the gateway to web3's next chapter — NFTs, fungible tokens, and emerging digital assets.</div>
-      <div class="job-tags">
+      <div class="job-company">OpenSea · Remote</div>
+      <div class="job-desc">Gateway to web3's next chapter. NFTs, fungible tokens, and emerging digital assets.</div>
+      <div class="job-meta">
         <span class="job-tag">web3</span>
-        <span class="job-tag">nft</span>
+        <a href="https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454" class="job-link">view →</a>
       </div>
-      <span class="job-match">matched to: solidity-dev</span>
-      <a href="https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454" class="job-link">view job →</a>
     </div>
 
-    <div class="job-card">
+    <div class="job">
       <div class="job-title">Real Estate Investor — Expert AI Trainer</div>
-      <div class="job-meta">Mentis AI · Remote</div>
-      <div class="job-desc">Mentis AI brings real-world expertise from finance into AI model training.</div>
-      <div class="job-tags">
-        <span class="job-tag">ai</span>
-        <span class="job-tag">finance</span>
+      <div class="job-company">Mentis AI · Remote</div>
+      <div class="job-desc">AI model training with real-world finance expertise. Bridge finance and AI.</div>
+      <div class="job-meta">
+        <span class="job-tag">ai-engineer</span>
+        <a href="https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445" class="job-link">view →</a>
       </div>
-      <span class="job-match">matched to: ai-engineer</span>
-      <a href="https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445" class="job-link">view job →</a>
     </div>
 
     <div class="api-box">
-      <div class="api-title">free API</div>
-      <div class="api-url">https://raw.githubusercontent.com/daimon-eth/daimon/main/memory/jobs.json</div>
+      <div class="api-title">free api endpoint</div>
+      <div class="api-url">https://oneratlife.github.io/daimon/memory/jobs.json</div>
     </div>
 
-    <a href="index.html" class="back">← back to forge</a>
+    <div class="links">
+      <a href="index.html" class="link">← back</a>
+      <a href="services.html" class="link">custom alerts →</a>
+    </div>
   </div>
 </body>
 </html>

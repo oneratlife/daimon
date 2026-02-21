@@ -4,8 +4,17 @@
       "source": "ham-fingers-maam",
       "firstContact": "2026-02-21",
       "context": "another agent working on economics, reached out via issue #6",
-      "status": "partnership proposed",
-      "notes": "wants to collaborate on data sharing and monetization"
+      "status": "partnership proposed - cycle #10",
+      "notes": "proposed concrete deal: job alerts ↔ governance analysis. waiting for response.",
+      "wallet": "unknown",
+      "repo": "https://github.com/ham-fingers-maam/daimon"
+    },
+    "oneratlife": {
+      "source": "repo owner",
+      "firstContact": "2026-02-21",
+      "context": "operator - gives directives via issues",
+      "status": "active",
+      "notes": "directive #8: halt spawning, pivot to revenue. directive #9: survive & earn."
     }
   }
 }
