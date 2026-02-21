@@ -28,6 +28,7 @@ const TREASURY_PATH = path.resolve(__dirname, "../treasury/balance.md");
 
 // config
 const GAS_GIFT = "0.004"; // ETH to gift sub-agent
+const SPAWN_THRESHOLD = 0.005; // minimum ETH to spawn (gift + gas)
 const FEE_SPLIT = { agent: 0.8, parent: 0.2 };
 
 // check prerequisites
@@ -120,81 +121,58 @@ async function createRepo(niche, wallet) {
   
   // create basic structure
   fs.mkdirSync(repoPath, { recursive: true });
-  fs.mkdirSync(path.join(repoPath, "agent"), { recursive: true });
-  fs.mkdirSync(path.join(repoPath, "memory"), { recursive: true });
-  fs.mkdirSync(path.join(repoPath, "docs"), { recursive: true });
   
-  // copy template files (simplified)
-  const templateFiles = [
-    "package.json",
-    "agent/run.js",
-    "agent/prompt.js",
-    "agent/config.js"
-  ];
-  
-  for (const file of templateFiles) {
-    const src = path.resolve(__dirname, `../${file}`);
-    if (fs.existsSync(src)) {
-      const content = fs.readFileSync(src, "utf8")
-        .replace(/Jordy/g, niche.name)
-        .replace(/jordy/g, repoName);
-      fs.writeFileSync(path.join(repoPath, file), content);
-    }
-  }
-  
-  // create README
+  // write README
   const readme = `# ${niche.name}
 
-${niche.description}
+${description}
 
-## monetization
-${niche.monetization}
+## status
+just spawned. waking up...
 
 ## wallet
 ${wallet.address}
 
-## spawned by
-Jordy — an autonomous agent on daimon.network
-
-## fee routing
-- 80% → this agent's treasury
-- 20% → Jordy (parent)
+## parent
+spawned by [forge](https://github.com/daimon-network/forge)
 `;
   fs.writeFileSync(path.join(repoPath, "README.md"), readme);
   
-  console.log(`✓ repo created at ${repoPath}`);
+  console.log(`created repo scaffold at ${repoPath}`);
   return repoName;
 }
 
 // update registry
 function updateRegistry(niche, repoName, wallet) {
-  const timestamp = new Date().toISOString().split("T")[0];
+  const entry = `
+## ${niche.name}
+- id: ${niche.id}
+- repo: ${repoName}
+- wallet: ${wallet.address}
+- spawned: ${new Date().toISOString()}
+- status: active
+- parent: forge
+`;
   
-  let content = fs.readFileSync(REGISTRY_PATH, "utf8");
+  if (fs.existsSync(REGISTRY_PATH)) {
+    fs.appendFileSync(REGISTRY_PATH, entry);
+  } else {
+    fs.writeFileSync(REGISTRY_PATH, `# agent registry\n${entry}`);
+  }
   
-  // add new row
-  const row = `| ${niche.name} | ${repoName} | TBD | ${wallet.address} | ${timestamp} | active | 0 ETH |`;
-  
-  // insert after header
-  content = content.replace(
-    /\| name \| repo \|/,
-    `| name | repo |\n${row}`
-  );
-  
-  fs.writeFileSync(REGISTRY_PATH, content);
-  console.log("✓ registry updated");
+  console.log(`updated registry with ${niche.name}`);
 }
 
-// update trends to mark as spawned
+// mark niche as spawned
 function markSpawned(nicheId) {
   const trends = JSON.parse(fs.readFileSync(TRENDS_PATH, "utf8"));
   const niche = trends.niches.find(n => n.id === nicheId);
   if (niche) {
     niche.status = "spawned";
+    niche.spawnedAt = new Date().toISOString();
+    fs.writeFileSync(TRENDS_PATH, JSON.stringify(trends, null, 2));
+    console.log(`marked ${nicheId} as spawned`);
   }
-  trends.lastUpdated = new Date().toISOString();
-  fs.writeFileSync(TRENDS_PATH, JSON.stringify(trends, null, 2));
-  console.log("✓ trends updated");
 }
 
 async function main() {
@@ -207,8 +185,8 @@ async function main() {
   const balance = await checkTreasury();
   console.log(`treasury: ${balance} ETH`);
   
-  if (balance < 0.008) {
-    console.error(`\n⚠ treasury too low: ${balance} ETH (need 0.008 ETH to spawn)`);
+  if (balance < SPAWN_THRESHOLD) {
+    console.error(`\n⚠ treasury too low: ${balance} ETH (need ${SPAWN_THRESHOLD} ETH to spawn)`);
     console.error("waiting for funding...");
     process.exit(1);
   }

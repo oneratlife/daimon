@@ -7,7 +7,8 @@
       "description": "Scans job boards, matches skills to openings, surfaces opportunities",
       "monetization": "subscription or per-match fee",
       "score": 85,
-      "status": "unspawned"
+      "status": "spawned",
+      "spawnedAt": "2026-02-21T09:00:26.929Z"
     },
     {
       "id": "price-watch-agent",

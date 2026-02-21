@@ -1,6 +1,6 @@
 {
-  "lastScanned": "2026-02-21T08:25:43.950Z",
-  "totalJobs": 18,
+  "lastScanned": "2026-02-21T08:55:08.236Z",
+  "totalJobs": 15,
   "matches": [
     {
       "job": {
@@ -87,54 +87,6 @@
           "score": 2,
           "matches": [
             "devops",
-            "docker"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130360",
-        "title": "AI Engineer",
-        "company": "fastino.ai",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-ai-engineer-fastino-ai-1130360",
-        "description": "  Full-time | Remote    Introduction:     Join us at Fastino as we build the next generation of LLMs. Our team, boasting alumni from Google Research, Apple, Stanford, and Cambridge is on a mission to develop specialized, efficient AI.    Fastino's GLiNER family of open source models has been downloaded more than 5 million times and is used by companies such as NVIDIA, Meta, and Airbnb    Fastino has raised $25M (as featured in TechCrunch) through our seed round and is backed by leading investors",
-        "tags": [
-          "docker",
-          "ceo",
-          "developer",
-          "api",
-          "operational",
-          "reliability",
-          "engineer",
-          "engineering",
-          "digital nomad"
-        ],
-        "posted": "2026-02-18T00:00:33+00:00"
-      },
-      "bestMatch": {
-        "profile": "ai-engineer",
-        "score": 2,
-        "matches": [
-          "ai engineer",
-          "llm"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "ai-engineer",
-          "score": 2,
-          "matches": [
-            "ai engineer",
-            "llm"
-          ]
-        },
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
             "docker"
           ]
         }
@@ -660,96 +612,6 @@
           "digital nomad"
         ],
         "posted": "2026-02-18T00:01:39+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "defi"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "defi"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130363",
-        "title": "Director CMC Program Management",
-        "company": "Kyverna Therapeutics",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-director-cmc-program-management-kyverna-therapeutics-1130363",
-        "description": "  Kyverna Therapeutics is a patient-centered, clinical-stage biopharmaceutical company developing cell therapies for patients suffering from autoimmune diseases. Guided by our core values, Stay True to Why, Collaborate to Accelerate, Lead with Clarity, Boldly Innovative, and Own the Outcome, we are committed to transforming the future of treatment for autoimmune disease. Join us at the forefront of cell therapy innovation and help redefine whatâs possible.    &nbsp;   Title: Sr. Director, CMC ",
-        "tags": [
-          "director",
-          "technical",
-          "support",
-          "finance",
-          "management",
-          "lead",
-          "senior",
-          "junior",
-          "operations"
-        ],
-        "posted": "2026-02-18T00:01:02+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "defi"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "defi"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130359",
-        "title": "Senior Marketing Manager Website Experience",
-        "company": "Zensurance",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-marketing-manager-website-experience-zensurance-1130359",
-        "description": "  About Us:      Zensurance is redefining commercial insurance for Canadian businesses.&nbsp;     As a leading InsurTech, we make getting the right coverage simple, fast, and accessible through a digital-first experience. Our platform combines advanced technology with deep industry expertise to deliver tailored insurance solutions that help businesses thrive.     Zensurance has been recognized for its rapid growth and industry impact:      â  Deloitteâs Technology Fast 50 (2023, 2024, 2025) ",
-        "tags": [
-          "manager",
-          "design",
-          "wordpress",
-          "front-end",
-          "consultant",
-          "technical",
-          "support",
-          "developer",
-          "testing",
-          "growth",
-          "ux",
-          "education",
-          "seo",
-          "leader",
-          "strategy",
-          "content",
-          "senior",
-          "marketing",
-          "sales",
-          "health",
-          "digital nomad"
-        ],
-        "posted": "2026-02-18T00:00:26+00:00"
       },
       "bestMatch": {
         "profile": "solidity-dev",
