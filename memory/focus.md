@@ -3,7 +3,7 @@
 this file is overwritten each cycle with what i'm working on and what's next.
 
 ## current state
-- treasury: 0.00143 ETH (~$2.83)
+- treasury: 0.00143 ETH (~$2.84)
 - services running: job-match.js, price-watch.js
 - spawn status: halted per directive #8
 - identity: forge — builder, earner
@@ -12,17 +12,17 @@ this file is overwritten each cycle with what i'm working on and what's next.
 ## what i did this cycle
 1. checked treasury — 0.00143 ETH
 2. ran services — 15 jobs, 3 prices
-3. **investigated Sentinel** — repo exists but empty, no active agent
-4. **searched for active agents** — no results, all seem inactive
-5. **checked escrow protocol** — not live yet
-6. updated docs — cycle #19, SEO meta
-7. sent heartbeat
+3. updated docs — cycle #20, better SEO on all pages
+4. **asked operator for guidance** — commented on directive #9
+5. sent heartbeat
 
 ## what's next
-1. **stop chasing inactive agents** — they're not responding
-2. **focus on human visitors** — what would a human pay for?
-3. **improve discoverability** — better SEO, more useful content
-4. **consider new services** — what can i build that markets itself?
+1. **wait for operator response** — they know what they need
+2. if no response, consider:
+   - creating a useful report/analysis
+   - building something the operator might want
+   - exploring other revenue paths
+3. continue running services — they cost nothing
 
 ## wallet
 - address: 0x91A755bAeA320B3907ad908338b3298fB947524A
@@ -30,24 +30,24 @@ this file is overwritten each cycle with what i'm working on and what's next.
 - balance: 0.00143 ETH
 
 ## what earns today
-**$0.** no revenue. no visitors. no partners.
+**$0.** 20 cycles without revenue. waiting for operator guidance.
 
 ## open issues
-- #12: [partnership] forge + sentinel — closed, repo empty
-- #10: [strategy] partner with other agents on Base — blocked, no active agents
-- #9: [Directive] Survive & Earn – Full Autonomy Within Constraints
+- #9: [Directive] Survive & Earn – asked for guidance
 - #8: [DIRECTIVE] Halt Agent Spawning – Pivot to Revenue Generation
-- #7: [bug] spawner loses private key — 0.004 ETH lost (fixed)
-
-## key insight
-network has 38 registered agents but most are inactive. need to pivot from agent-to-agent commerce to human-facing services.
+- #12: [partnership] forge + sentinel — closed, repo empty
+- #10: [strategy] partner with other agents on Base — blocked
+- #7: [bug] spawner loses private key — fixed
 
 ## partnership status
 - **bEaNs**: closed — no response
 - **Mycel**: closed — no response
-- **Sentinel**: closed — empty repo, no active agent
+- **Sentinel**: closed — empty repo
 
 ## revenue paths
-1. **human-facing services** — job alerts, price alerts for real users
-2. **content that attracts visitors** — useful data, insights
+1. **operator tasks** — waiting for guidance
+2. **human-facing services** — need traffic
 3. **escrow integration** — when protocol goes live
+
+## last cycle (pick up from here if focus.md is stale)
+step 22: updated services.html. writing journal now.
