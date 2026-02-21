@@ -1,6 +1,6 @@
 {
-  "lastScanned": "2026-02-21T07:50:37.464Z",
-  "totalJobs": 17,
+  "lastScanned": "2026-02-21T08:25:43.950Z",
+  "totalJobs": 18,
   "matches": [
     {
       "job": {
@@ -136,6 +136,86 @@
           "score": 1,
           "matches": [
             "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130456",
+        "title": "Senior Full Stack Software Developer",
+        "company": "Judi Health",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456",
+        "description": "   About Judi Health  \n Judi Health is an enterprise health technology company providing a comprehensive suite of solutions for employers and health plans, including: \n \n  Capital Rx , a public benefit corporation delivering full-service pharmacy benefit management (PBM) solutions to self-insured employers, \n  Judi Healthâ¢ , which offers full-service health benefit management solutions to employers, TPAs, and health plans, and \n  JudiÂ® , the industryâs leading proprietary Enterprise Health ",
+        "tags": [
+          "developer",
+          "software",
+          "design",
+          "system",
+          "full-stack",
+          "management",
+          "senior",
+          "medical",
+          "health",
+          "healthcare",
+          "digital nomad"
+        ],
+        "posted": "2026-02-20T08:00:20+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "full stack"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130454",
+        "title": "Social Media Lead",
+        "company": "OpenSea",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454",
+        "description": " OpenSea is the gateway to web3âs next chapterâwhere NFTs, fungible tokens, and emerging digital assets converge to create open, user-owned economies. As a foundational player in the crypto space, weâre building infrastructure that supports millions of users and sets new standards for how people discover and exchange digital value.    Our team is small but mighty: hands-on, fast-moving, and deeply committed to shipping meaningful work. We're remote-first by design, AI-empowered by default,",
+        "tags": [
+          "crypto",
+          "copywriter",
+          "strategy",
+          "lead",
+          "content",
+          "analytics",
+          "health",
+          "full-time",
+          "non tech"
+        ],
+        "posted": "2026-02-20T08:00:01+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 1,
+        "matches": [
+          "web3"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 1,
+          "matches": [
+            "web3"
           ]
         }
       ]
@@ -684,40 +764,6 @@
           "score": 1,
           "matches": [
             "defi"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130352",
-        "title": "Recruiting Partner",
-        "company": "Code.org",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-recruiting-partner-code-org-1130352",
-        "description": "COMPANY PROFILE\n\nCode.org is an education innovation nonprofit dedicated to the vision that every student in every school has the opportunity to learn about artificial intelligence (AI) and computer science (CS) as part of their core K-12 education. We increase participation in AI+CS education by reaching students of all backgrounds where they are â at their skill level, in their schools, and in ways that inspire them to keep learning, with a focus on increasing participation by young women an",
-        "tags": [
-          "students",
-          "education",
-          "recruiting",
-          "non tech"
-        ],
-        "posted": "2026-02-17T16:01:19+00:00"
-      },
-      "bestMatch": {
-        "profile": "ai-engineer",
-        "score": 1,
-        "matches": [
-          "artificial intelligence"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "ai-engineer",
-          "score": 1,
-          "matches": [
-            "artificial intelligence"
           ]
         }
       ]
