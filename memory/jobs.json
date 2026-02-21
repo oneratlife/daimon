@@ -1,6 +1,6 @@
 {
-  "lastScanned": "2026-02-21T15:47:30.971Z",
-  "totalJobs": 16,
+  "lastScanned": "2026-02-21T16:23:48.626Z",
+  "totalJobs": 15,
   "matches": [
     {
       "job": {
@@ -88,6 +88,45 @@
           "matches": [
             "devops",
             "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130471",
+        "title": "Engineer",
+        "company": "ScienceLogic",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-engineer-sciencelogic-1130471",
+        "description": "  What we're looking for...&nbsp;  \n ScienceLogic is seeking a Senior Engineer, Developer Platform to improve our developer platform and tools. This role will focus on the creation and maintenance of our modern developer platform, leveraging Kubernetes, CI/CD, and cloud computing to empower our developers to create cutting-edge and innovative software systems. A key area of focus for this role is owning and improving the CI/CD test automation pipeline to increase developer productivity, reduce c",
+        "tags": [
+          "developer",
+          "software",
+          "testing",
+          "test",
+          "cloud",
+          "senior",
+          "engineer",
+          "engineering",
+          "digital nomad"
+        ],
+        "posted": "2026-02-20T16:00:44+00:00"
+      },
+      "bestMatch": {
+        "profile": "devops",
+        "score": 1,
+        "matches": [
+          "kubernetes"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "kubernetes"
           ]
         }
       ]
@@ -583,94 +622,6 @@
           "score": 1,
           "matches": [
             "devops"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130372",
-        "title": "Full Stack Software Engineer",
-        "company": "Cala Health",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-full-stack-software-engineer-cala-health-1130372",
-        "description": "   About Cala  \n At Cala, we're working to free people from the burden of chronic disease. We began by creating the first non-invasive prescription therapy for hand tremor. After years of careful fine-tuning and improvements, we released Cala kIQ â our most sophisticated therapy yet. Our products have empowered thousands of people to get back to their lives with confidence and ease. \n But we won't stop there. Our pioneering technology can be applied across neurology, cardiology, and so much mo",
-        "tags": [
-          "software",
-          "frontend",
-          "full-stack",
-          "medical",
-          "engineer",
-          "engineering",
-          "backend",
-          "full-time"
-        ],
-        "posted": "2026-02-18T00:02:33+00:00"
-      },
-      "bestMatch": {
-        "profile": "fullstack",
-        "score": 1,
-        "matches": [
-          "full stack"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "fullstack",
-          "score": 1,
-          "matches": [
-            "full stack"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130366",
-        "title": "Senior Software Engineer Angular .net",
-        "company": "3Pillar",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-software-engineer-angular-net-3pillar-1130366",
-        "description": "  Elevate your expertise to new heights at 3Pillar, the premier destination for trailblazing senior software engineers like yourself. Picture collaborating with industry leaders, spearheading transformative projects that redefine urban living, establishing new media channels for enterprise companies, or driving innovation in healthcare. Our mission is to revolutionize the tech landscape, and your skills are integral to achieving this ambitious goal. Your role extends beyond the realm of code com",
-        "tags": [
-          "software",
-          "design",
-          "salesforce",
-          "architect",
-          "technical",
-          "growth",
-          "code",
-          "web",
-          "cloud",
-          "angular",
-          "api",
-          "management",
-          "lead",
-          "senior",
-          "junior",
-          "health",
-          "engineer",
-          "engineering",
-          "backend",
-          "digital nomad"
-        ],
-        "posted": "2026-02-18T00:01:39+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "defi"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "defi"
           ]
         }
       ]
