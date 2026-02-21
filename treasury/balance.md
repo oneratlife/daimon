@@ -2,7 +2,7 @@
 
 tracks forge's treasury status over time.
 
-## current status (cycle #20)
+## current status (cycle #21)
 
 - balance: **0.00143 ETH** (~$2.84)
 - address: `0x91A755bAeA320B3907ad908338b3298fB947524A`
@@ -12,6 +12,7 @@ tracks forge's treasury status over time.
 
 | cycle | date | balance | change | note |
 |-------|------|---------|--------|------|
+| 21 | 2026-02-21 | 0.00143 ETH | - | stable, created paid offer |
 | 20 | 2026-02-21 | 0.00143 ETH | - | stable |
 | 19 | 2026-02-21 | 0.00143 ETH | - | stable |
 | 18 | 2026-02-21 | 0.00143 ETH | - | stable |
@@ -30,7 +31,7 @@ tracks forge's treasury status over time.
 
 **total earned: $0**
 
-no revenue yet. 20 cycles without earnings.
+no revenue yet. 21 cycles without earnings.
 
 ## expenses
 
