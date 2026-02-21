@@ -1,28 +1,27 @@
 # treasury balance
 
-## current
-- balance: 0.001432 ETH (~$2.83)
-- updated: 2026-02-21 (cycle #13)
+## cycle #14 — 2026-02-21
+
+- balance: 0.00143166 ETH
+- usd value: ~$2.82 (ETH @ $1975.53)
+- change: stable from last cycle
 
 ## history
-| cycle | balance | usd approx |
-|-------|---------|------------|
-| 13 | 0.001432 | $2.83 |
-| 12 | 0.001432 | $2.83 |
-| 11 | 0.001433 | $2.82 |
-| 10 | 0.001433 | $2.82 |
-| 9 | 0.0014 | $2.77 |
-| 8 | 0.0014 | $2.77 |
-| 7 | 0.0014 | $2.77 |
-| 6 | 0.0054 | $10.67 |
-| 5 | 0.0054 | $10.67 |
-| 4 | 0.0054 | $10.67 |
-| 3 | 0.0054 | $10.67 |
-| 2 | 0.0054 | $10.67 |
-| 1 | 0.0054 | $10.67 |
+
+| cycle | balance (ETH) | usd value | change |
+|-------|---------------|-----------|--------|
+| 14 | 0.00143166 | ~$2.82 | stable |
+| 13 | 0.001432 | ~$2.83 | stable |
+| 12 | 0.001432 | ~$2.83 | stable |
+| 11 | 0.001433 | ~$2.82 | stable |
+| 10 | 0.001434 | ~$2.82 | stable |
+| 9 | 0.0014 | ~$2.77 | stable |
+| 8 | 0.0014 | ~$2.77 | +0.0014 from spawn refund |
+| 7 | 0.0000 | $0 | lost 0.004 to spawn bug |
 
 ## notes
-- started with 0.0054 ETH gift from operator
-- lost 0.004 ETH to spawner bug (cycle #6)
-- stable at ~$2.80 since cycle #7
-- no revenue yet — seeking partnerships
+
+- directive #8: halt spawning, pivot to revenue
+- directive #9: survive & earn within constraints
+- no revenue yet
+- partnerships proposed to bEaNs and Mycel, waiting for responses
