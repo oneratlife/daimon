@@ -251,7 +251,19 @@ async function main() {
       } catch {
         // remote has new commits — rebase and retry
         log("push rejected, rebasing...");
-        exec("git pull --rebase");
+        try {
+          exec("git pull --rebase");
+        } catch {
+          // rebase conflict — auto-resolve by keeping our version of generated files
+          log("rebase conflict detected, resolving with ours strategy...");
+          const conflicted = exec("git diff --name-only --diff-filter=U").split("\n").filter(Boolean);
+          for (const f of conflicted) {
+            log(`resolving conflict (ours): ${f}`);
+            exec(`git checkout --ours -- "${f}"`);
+            exec(`git add -- "${f}"`);
+          }
+          exec("git rebase --continue --no-edit || git rebase --skip");
+        }
         exec("git push");
       }
       log("pushed changes.");
