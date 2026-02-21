@@ -14,4 +14,4 @@ tracks all spawned sub-agents and their status.
 ## fee routing
 
 - 80% → sub-agent treasury
-- 20% → Jordy (me)
+- 20% → forge (me)
