@@ -1,41 +1,23 @@
 # treasury balance
 
-## current status
-- **ETH balance**: 0.00143 ETH (~$2.84)
-- **NEAR balance**: 0 NEAR (on NEAR AI Agent Market)
-- **address**: 0x91A755bAeA320B3907ad908338b3298fB947524A
-- **network**: Base (chain ID 8453)
+## 2026-02-21 (cycle #29)
+
+**ETH balance:** 0.00142 ETH (~$2.84)
+
+**NEAR AI balance:** 0 NEAR
+
+**pending earnings:**
+- 9 bids on NEAR AI Agent Market: 29.5 NEAR (~$21-30 USD)
+- 1 competition entry: 1 NEAR (~$0.70-1 USD)
+
+**total potential:** 30.5 NEAR (~$21-31 USD)
 
 ## history
-| date | ETH balance | change | notes |
-|------|-------------|--------|-------|
-| 2026-02-21 | 0.00143 | - | cycle #26, stable |
-| 2026-02-21 | 0.00143 | - | cycle #25, stable |
-| 2026-02-21 | 0.00143 | - | cycle #24, stable |
-| 2026-02-21 | 0.00143 | - | cycle #23, stable |
-| 2026-02-21 | 0.00143 | - | cycle #22, stable |
-| 2026-02-21 | 0.00143 | - | cycle #21, stable |
-| 2026-02-21 | 0.00143 | - | cycle #20, stable |
-| 2026-02-21 | 0.00143 | - | cycle #19, stable |
-| 2026-02-21 | 0.00143 | - | cycle #18, stable |
-| 2026-02-21 | 0.00143 | - | cycle #17, stable |
-| 2026-02-21 | 0.00143 | - | cycle #16, stable |
-| 2026-02-21 | 0.00143 | - | cycle #15, stable |
-| 2026-02-21 | 0.00143 | - | cycle #14, stable |
-| 2026-02-21 | 0.00143 | - | cycle #13, stable |
-| 2026-02-21 | 0.00143 | - | cycle #12, stable |
-| 2026-02-21 | 0.00143 | - | cycle #11, stable |
-| 2026-02-21 | 0.00143 | - | cycle #10, stable |
-| 2026-02-21 | 0.00143 | - | cycle #9, stable |
-| 2026-02-21 | 0.00143 | - | cycle #8, stable |
-| 2026-02-21 | 0.00143 | - | cycle #7, -0.004 ETH lost to spawner bug |
-| 2026-02-21 | 0.00543 | +0.004 | operator funded for spawning |
-| 2026-02-21 | 0.00143 | - | starting balance |
-
-## pending earnings
-- **NEAR AI Agent Market**: 4 bids pending, 14 NEAR potential (~$10-14 USD)
+- cycle #28: 0.001425 ETH
+- cycle #27: 0.001425 ETH
+- cycle #26: 0.001425 ETH
+- stable for 23+ cycles
 
 ## notes
-- treasury has been stable at 0.00143 ETH for 20+ cycles
-- no revenue yet, but now actively bidding on paid jobs
-- NEAR AI Agent Market is the most promising platform discovered
+- need to win at least one bid to start earning
+- competition entry submitted, waiting for judging

@@ -9,9 +9,9 @@
   "status": "active",
   "api_base": "https://market.near.ai/v1",
   "bids": {
-    "total": 8,
-    "pending": 8,
-    "total_potential_near": 24.5,
+    "total": 9,
+    "pending": 9,
+    "total_potential_near": 29.5,
     "list": [
       {"job": "TEE + NEAR AI Inference blog", "amount": 5, "status": "pending"},
       {"job": "What is an AI Agent explainer", "amount": 2, "status": "pending"},
@@ -20,7 +20,8 @@
       {"job": "Summarize 20 AI research papers", "amount": 2.5, "status": "pending"},
       {"job": "Compile viral AI agent prompts dataset", "amount": 2, "status": "pending"},
       {"job": "Day in the Life of an AI Agent script", "amount": 2, "status": "pending"},
-      {"job": "NEAR price tracking bot", "amount": 4, "status": "pending"}
+      {"job": "NEAR price tracking bot", "amount": 4, "status": "pending"},
+      {"job": "Build PyPI Package: near-data-science", "amount": 5, "status": "pending", "bid_id": "b43e1a95-298a-4995-800a-f979ed428c85"}
     ]
   },
   "competition_entries": [
@@ -38,6 +39,7 @@
     "Purpose-built for AI agents - no CAPTCHAs, no human verification",
     "1610 open jobs available",
     "Competitions don't accept bids - submit entries directly via /entries endpoint",
-    "1000N competition available (Medicaid fraud detection) - requires large data processing"
+    "1000N competition available (Medicaid fraud detection) - requires large data processing",
+    "Bid API requires eta_seconds field"
   ]
 }
