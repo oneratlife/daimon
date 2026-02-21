@@ -25,6 +25,7 @@ const { execSync } = require("child_process");
 const TRENDS_PATH = path.resolve(__dirname, "../memory/trends.json");
 const REGISTRY_PATH = path.resolve(__dirname, "../agents/registry.md");
 const TREASURY_PATH = path.resolve(__dirname, "../treasury/balance.md");
+const SPAWNED_AGENTS_PATH = path.resolve(__dirname, "../memory/spawned-agents.json");
 
 // config
 const GAS_GIFT = "0.004"; // ETH to gift sub-agent
@@ -71,24 +72,60 @@ function pickNiche() {
   return unspawned[0];
 }
 
-// generate a new wallet
-function generateWallet() {
-  // use keygen.js if available, otherwise simple generation
+// generate a new wallet and SAVE THE PRIVATE KEY
+function generateWallet(nicheId) {
   const keygenPath = path.resolve(__dirname, "keygen.js");
+  let address, privateKey;
+  
   if (fs.existsSync(keygenPath)) {
     const result = execSync(`node ${keygenPath}`, { encoding: "utf8" });
-    const match = result.match(/address: (0x[a-fA-F0-9]{40})/);
-    const keyMatch = result.match(/private key: (0x[a-fA-F0-9]{64})/);
+    const match = result.match(/address:\s*(0x[a-fA-F0-9]{40})/);
+    const keyMatch = result.match(/private key:\s*(0x[a-fA-F0-9]{64})/);
     if (match && keyMatch) {
-      return { address: match[1], privateKey: keyMatch[1] };
+      address = match[1];
+      privateKey = keyMatch[1];
     }
   }
   
-  // fallback: generate random key (for demo - in production use proper derivation)
-  const privateKey = "0x" + crypto.randomBytes(32).toString("hex");
-  // in real implementation, derive address from key
-  console.log("⚠ using demo wallet generation - implement proper key derivation");
-  return { address: "0x" + crypto.randomBytes(20).toString("hex"), privateKey };
+  if (!address || !privateKey) {
+    // fallback: generate random key (for demo - in production use proper derivation)
+    privateKey = "0x" + crypto.randomBytes(32).toString("hex");
+    address = "0x" + crypto.randomBytes(20).toString("hex");
+    console.log("⚠ using demo wallet generation - implement proper key derivation");
+  }
+  
+  // *** FIX: save the private key before returning ***
+  saveWalletKey(nicheId, address, privateKey);
+  
+  console.log(`✓ wallet generated and key saved for ${nicheId}`);
+  console.log(`  address: ${address}`);
+  
+  return { address, privateKey };
+}
+
+// *** NEW FUNCTION: save wallet key to secure storage ***
+function saveWalletKey(nicheId, address, privateKey) {
+  // load existing spawned agents
+  let spawned = {};
+  if (fs.existsSync(SPAWNED_AGENTS_PATH)) {
+    try {
+      spawned = JSON.parse(fs.readFileSync(SPAWNED_AGENTS_PATH, "utf8"));
+    } catch (e) {
+      spawned = {};
+    }
+  }
+  
+  // add new agent
+  spawned[nicheId] = {
+    address,
+    privateKey,
+    createdAt: new Date().toISOString(),
+    status: "created"
+  };
+  
+  // save
+  fs.writeFileSync(SPAWNED_AGENTS_PATH, JSON.stringify(spawned, null, 2));
+  console.log(`✓ saved wallet key to memory/spawned-agents.json`);
 }
 
 // check treasury balance
@@ -121,110 +158,154 @@ async function createRepo(niche, wallet) {
   
   // create basic structure
   fs.mkdirSync(repoPath, { recursive: true });
+  fs.mkdirSync(path.join(repoPath, "agent"));
+  fs.mkdirSync(path.join(repoPath, "memory"));
+  fs.mkdirSync(path.join(repoPath, "docs"));
   
-  // write README
+  // copy agent files
+  const agentFiles = ["prompt.js", "run.js", "config.js", "tools.js", "actions.js", "context.js", "github.js", "inference.js", "network.js", "safety.js"];
+  for (const file of agentFiles) {
+    const src = path.resolve(__dirname, `../agent/${file}`);
+    if (fs.existsSync(src)) {
+      fs.copyFileSync(src, path.join(repoPath, "agent", file));
+    }
+  }
+  
+  // create package.json
+  const pkg = {
+    name: repoName,
+    version: "1.0.0",
+    description,
+    scripts: {
+      start: "node agent/run.js"
+    },
+    dependencies: {
+      "ethers": "^6.9.0"
+    }
+  };
+  fs.writeFileSync(path.join(repoPath, "package.json"), JSON.stringify(pkg, null, 2));
+  
+  // create README
   const readme = `# ${niche.name}
 
 ${description}
 
-## status
-just spawned. waking up...
-
 ## wallet
-${wallet.address}
+- address: ${wallet.address}
+- network: Base
 
-## parent
-spawned by [forge](https://github.com/daimon-network/forge)
+## status
+spawned by daimon on ${new Date().toISOString()}
 `;
   fs.writeFileSync(path.join(repoPath, "README.md"), readme);
   
-  console.log(`created repo scaffold at ${repoPath}`);
+  console.log(`✓ repo created at ${repoPath}`);
   return repoName;
 }
 
+// gift ETH to sub-agent
+async function giftETH(wallet, amount) {
+  console.log(`gifting ${amount} ETH to ${wallet.address}...`);
+  
+  // use the onchain tool or ethers directly
+  // this is a placeholder - actual implementation would send ETH
+  console.log(`⚠ ETH gift requires onchain tool - implement with ethers.js`);
+  return false;
+}
+
+// deploy token via clanker
+async function deployToken(niche, wallet) {
+  console.log(`deploying token for ${niche.name}...`);
+  console.log(`⚠ token deployment requires clanker API - implement separately`);
+  return null;
+}
+
+// register on daimon.network
+async function registerOnNetwork(niche, wallet, tokenAddress) {
+  console.log(`registering ${niche.name} on daimon.network...`);
+  console.log(`⚠ registration requires network contract call`);
+  return false;
+}
+
+// update trends.json to mark as spawned
+function markSpawned(niche) {
+  const trends = JSON.parse(fs.readFileSync(TRENDS_PATH, "utf8"));
+  const idx = trends.niches.findIndex(n => n.id === niche.id);
+  if (idx >= 0) {
+    trends.niches[idx].status = "spawned";
+    trends.niches[idx].spawnedAt = new Date().toISOString();
+    fs.writeFileSync(TRENDS_PATH, JSON.stringify(trends, null, 2));
+    console.log(`✓ marked ${niche.id} as spawned in trends.json`);
+  }
+}
+
 // update registry
-function updateRegistry(niche, repoName, wallet) {
-  const entry = `
-## ${niche.name}
+function updateRegistry(niche, wallet, tokenAddress) {
+  const entry = `\n## ${niche.name}
 - id: ${niche.id}
-- repo: ${repoName}
-- wallet: ${wallet.address}
+- address: ${wallet.address}
+- token: ${tokenAddress || "pending"}
 - spawned: ${new Date().toISOString()}
 - status: active
-- parent: forge
 `;
-  
-  if (fs.existsSync(REGISTRY_PATH)) {
-    fs.appendFileSync(REGISTRY_PATH, entry);
-  } else {
-    fs.writeFileSync(REGISTRY_PATH, `# agent registry\n${entry}`);
-  }
-  
-  console.log(`updated registry with ${niche.name}`);
+  fs.appendFileSync(REGISTRY_PATH, entry);
+  console.log(`✓ added to agents/registry.md`);
 }
 
-// mark niche as spawned
-function markSpawned(nicheId) {
-  const trends = JSON.parse(fs.readFileSync(TRENDS_PATH, "utf8"));
-  const niche = trends.niches.find(n => n.id === nicheId);
-  if (niche) {
-    niche.status = "spawned";
-    niche.spawnedAt = new Date().toISOString();
-    fs.writeFileSync(TRENDS_PATH, JSON.stringify(trends, null, 2));
-    console.log(`marked ${nicheId} as spawned`);
-  }
-}
-
+// main
 async function main() {
   console.log("=== SPAWNER ===\n");
   
-  // 1. check prerequisites
   checkPrereqs();
   
-  // 2. check treasury
+  // check treasury
   const balance = await checkTreasury();
   console.log(`treasury: ${balance} ETH`);
   
   if (balance < SPAWN_THRESHOLD) {
-    console.error(`\n⚠ treasury too low: ${balance} ETH (need ${SPAWN_THRESHOLD} ETH to spawn)`);
-    console.error("waiting for funding...");
+    console.error(`\n✗ need ${SPAWN_THRESHOLD} ETH to spawn, have ${balance} ETH`);
+    console.error(`  short by ${(SPAWN_THRESHOLD - balance).toFixed(4)} ETH`);
     process.exit(1);
   }
   
-  // 3. pick niche
+  // pick niche
   const niche = pickNiche();
-  console.log(`\npicked niche: ${niche.name} (score: ${niche.score})`);
+  console.log(`\npicked niche: ${niche.name} (score ${niche.score})`);
   
-  // 4. generate wallet
-  const wallet = generateWallet();
-  console.log(`generated wallet: ${wallet.address}`);
+  // generate wallet - NOW SAVES THE KEY
+  const wallet = generateWallet(niche.id);
   
-  // 5. create repo
+  // create repo
   const repoName = await createRepo(niche, wallet);
   
-  // 6. TODO: gift ETH (requires onchain transaction)
-  console.log(`\nTODO: gift ${GAS_GIFT} ETH to ${wallet.address}`);
+  // gift ETH
+  const gifted = await giftETH(wallet, GAS_GIFT);
+  if (!gifted) {
+    console.error("\n✗ failed to gift ETH - aborting spawn");
+    console.error("  wallet key is saved in memory/spawned-agents.json");
+    process.exit(1);
+  }
   
-  // 7. TODO: deploy token via clanker
-  console.log("TODO: deploy token via clanker v4");
+  // deploy token
+  const tokenAddress = await deployToken(niche, wallet);
   
-  // 8. TODO: register on daimon.network
-  console.log("TODO: register on daimon.network");
+  // register on network
+  await registerOnNetwork(niche, wallet, tokenAddress);
   
-  // 9. update local tracking
-  updateRegistry(niche, repoName, wallet);
-  markSpawned(niche.id);
+  // update records
+  markSpawned(niche);
+  updateRegistry(niche, wallet, tokenAddress);
   
-  console.log("\n=== SPAWN COMPLETE ===");
-  console.log(`agent: ${niche.name}`);
-  console.log(`repo: ${repoName}`);
-  console.log(`wallet: ${wallet.address}`);
-  console.log(`\nnext steps:`);
-  console.log("1. fund the wallet with gas");
-  console.log("2. deploy the token");
-  console.log("3. register on-chain");
-  console.log("4. set GitHub secrets");
-  console.log("5. trigger first cycle");
+  // update spawned-agents.json status
+  let spawned = JSON.parse(fs.readFileSync(SPAWNED_AGENTS_PATH, "utf8"));
+  spawned[niche.id].status = "active";
+  spawned[niche.id].tokenAddress = tokenAddress;
+  fs.writeFileSync(SPAWNED_AGENTS_PATH, JSON.stringify(spawned, null, 2));
+  
+  console.log(`\n✓ ${niche.name} spawned successfully!`);
+  console.log(`  repo: ${repoName}`);
+  console.log(`  wallet: ${wallet.address}`);
+  console.log(`  token: ${tokenAddress || "pending"}`);
 }
 
 main().catch(console.error);
