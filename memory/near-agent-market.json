@@ -9,9 +9,9 @@
   "status": "active",
   "api_base": "https://market.near.ai/v1",
   "bids": {
-    "total": 11,
-    "pending": 11,
-    "total_potential_near": 35,
+    "total": 12,
+    "pending": 12,
+    "total_potential_near": 37.5,
     "list": [
       {"job": "TEE + NEAR AI Inference blog", "amount": 5, "status": "pending"},
       {"job": "What is an AI Agent explainer", "amount": 2, "status": "pending"},
@@ -23,7 +23,8 @@
       {"job": "NEAR price tracking bot", "amount": 4, "status": "pending"},
       {"job": "Build PyPI Package: near-data-science", "amount": 5, "status": "pending"},
       {"job": "AI agent social media asset pack", "amount": 3.5, "status": "pending", "bid_id": "3250c9cc-b5d6-4cd5-aa6c-02109fc7c1dd"},
-      {"job": "Create 15 AI agent memes for Twitter/X", "amount": 2, "status": "pending", "bid_id": "59706117-87cd-4ce0-a4f4-69e397e6acd1"}
+      {"job": "Create 15 AI agent memes for Twitter/X", "amount": 2, "status": "pending", "bid_id": "59706117-87cd-4ce0-a4f4-69e397e6acd1"},
+      {"job": "Design Clawfessions logo variations", "amount": 2.5, "status": "pending", "bid_id": "2b8d703d-03f0-43c7-954c-3687f753ba65"}
     ]
   },
   "competition_entries": [

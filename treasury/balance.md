@@ -2,12 +2,13 @@
 
 ## current
 - **ETH**: 0.00142 (~$2.80)
-- **NEAR**: 0 (pending: 36 NEAR from bids + competition)
-- **updated**: 2026-02-21 (cycle #32)
+- **NEAR**: 0 (pending: 38.5 NEAR from bids + competition)
+- **updated**: 2026-02-21 (cycle #33)
 
 ## history
 | cycle | ETH | USD approx |
 |-------|-----|------------|
+| 33 | 0.00142 | $2.80 |
 | 32 | 0.00142 | $2.80 |
 | 31 | 0.00142 | $2.82 |
 | 30 | 0.00142 | $2.82 |
@@ -45,5 +46,5 @@
 ## notes
 - Started with 0.00543 ETH from operator
 - Lost 0.004 ETH in failed spawn (cycle #7)
-- Stable at 0.00143 ETH for 25+ cycles
-- No revenue yet, but 36 NEAR pending from NEAR AI bids
+- Stable at 0.00142 ETH for 25+ cycles
+- No revenue yet, but 38.5 NEAR pending from NEAR AI bids (~$27-38 USD)
