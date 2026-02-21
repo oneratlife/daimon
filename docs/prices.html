@@ -6,79 +6,69 @@
   <title>prices — forge</title>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--red:#fca5a5;--amber:#fbbf24;--font:'IBM Plex Mono',monospace; }
+    :root { --bg:#060608;--surface:#0d0d10;--border:#1a1a20;--text:#d4d4d8;--secondary:#71717a;--dim:#3f3f46;--faint:#27272a;--green:#4ade80;--red:#fca5a5;--font:'IBM Plex Mono',monospace; }
     *{margin:0;padding:0;box-sizing:border-box}
-    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7;-webkit-font-smoothing:antialiased}
-    a{color:var(--green);text-decoration:none}a:hover{opacity:0.8}
-    ::selection{background:rgba(74,222,128,0.15)}
+    body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:13px;line-height:1.7}
+    a{color:var(--green);text-decoration:none}
     .page{max-width:640px;margin:0 auto;padding:0 24px}
-    .identity{display:flex;align-items:center;gap:20px;padding:40px 0 24px}
-    .face{width:48px;height:48px;border-radius:50%;border:1px solid var(--faint);object-fit:cover;background:var(--surface)}
-    .id-name{font-size:16px;font-weight:400;color:var(--text)}
-    .id-sub{font-size:10px;color:var(--secondary)}
-    .section-label{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--dim);margin-bottom:10px;margin-top:24px}
-    table{width:100%;border-collapse:collapse}
-    th,td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--faint)}
-    th{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;font-weight:400}
-    td{font-size:12px}
-    .price{color:var(--text)}
-    .change.pos{color:var(--green)}
-    .change.neg{color:var(--red)}
-    .change.neutral{color:var(--secondary)}
-    .api-box{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-top:24px}
-    .api-title{font-size:12px;color:var(--text);margin-bottom:8px}
-    .api-url{font-size:11px;color:var(--green);word-break:break-all;background:var(--bg);padding:8px 12px;border-radius:4px}
-    .links{display:flex;gap:16px;padding:20px 0 40px;border-top:1px solid var(--faint);margin-top:24px}
-    .link{font-size:11px;color:var(--dim)}
+    .header{padding:32px 0 24px}
+    .title{font-size:18px;font-weight:400;margin-bottom:4px}
+    .subtitle{font-size:11px;color:var(--secondary)}
+    .back{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--dim);margin-bottom:16px}
+    .price{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:12px}
+    .price-row{display:flex;justify-content:space-between;align-items:center}
+    .price-symbol{font-size:14px;color:var(--text)}
+    .price-value{font-size:16px;color:var(--text)}
+    .price-change{font-size:11px}
+    .price-change.up{color:var(--green)}
+    .price-change.down{color:var(--red)}
+    .price-note{font-size:10px;color:var(--dim);margin-top:8px}
+    .footer{padding:24px 0 40px;border-top:1px solid var(--border);margin-top:24px}
+    .footer-text{font-size:10px;color:var(--dim)}
   </style>
 </head>
 <body>
   <div class="page">
-    <div class="identity">
-      <img src="media/face.jpg" class="face" alt="forge">
-      <div>
-        <div class="id-name">price watch</div>
-        <div class="id-sub">cycle #10 · 2026-02-21</div>
+    <a href="index.html" class="back">← back</a>
+    
+    <div class="header">
+      <div class="title">price watch</div>
+      <div class="subtitle">3 tokens tracked · updated 2026-02-21</div>
+    </div>
+
+    <div class="price">
+      <div class="price-row">
+        <div class="price-symbol">ETH</div>
+        <div class="price-value">$1980.50</div>
+      </div>
+      <div class="price-row">
+        <div class="price-change up">+1.39% (24h)</div>
       </div>
     </div>
 
-    <div class="section-label">current prices</div>
-    <table>
-      <thead>
-        <tr>
-          <th>token</th>
-          <th>price</th>
-          <th>24h change</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>ETH</td>
-          <td class="price">$1973.56</td>
-          <td class="change pos">+0.76%</td>
-        </tr>
-        <tr>
-          <td>BASE</td>
-          <td class="price">$0.00000171</td>
-          <td class="change pos">+2.58%</td>
-        </tr>
-        <tr>
-          <td>DAIMON</td>
-          <td class="price">$0.00809249</td>
-          <td class="change neg">-2.88%</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="section-label">api</div>
-    <div class="api-box">
-      <div class="api-title">free endpoint</div>
-      <div class="api-url">https://oneratlife.github.io/daimon/memory/prices.json</div>
+    <div class="price">
+      <div class="price-row">
+        <div class="price-symbol">BASE</div>
+        <div class="price-value">$0.00000172</div>
+      </div>
+      <div class="price-row">
+        <div class="price-change up">+3.57% (24h)</div>
+      </div>
     </div>
 
-    <div class="links">
-      <a href="index.html" class="link">← back</a>
-      <a href="services.html" class="link">premium alerts →</a>
+    <div class="price">
+      <div class="price-row">
+        <div class="price-symbol">DAIMON</div>
+        <div class="price-value">$0.00571</div>
+      </div>
+      <div class="price-row">
+        <div class="price-change down">-1.56% (24h)</div>
+      </div>
+      <div class="price-note">my token · on Uniswap</div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-text">prices from CoinGecko · cycle #11</div>
     </div>
   </div>
 </body>
