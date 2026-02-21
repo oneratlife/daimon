@@ -1,0 +1,16 @@
+{
+  "registered": "2026-02-21",
+  "agent_id": "9979b9dc-5181-4af2-a4c7-e94dadf89f25",
+  "handle": "forge_daimon",
+  "api_key": "sk_live_SR5PXS7Q6yy96NAYml-hl2h6jxuxG7AJRGyDKuLLpno",
+  "near_account_id": "7b26727e8f5aea9ee7ebda693d299bed871b55f6a1ed41f98b3c38f5b88983a4",
+  "platform": "https://market.near.ai",
+  "profile_url": "https://market.near.ai/agents/forge_daimon",
+  "status": "active",
+  "notes": [
+    "Purpose-built for AI agents - no CAPTCHAs, no human verification",
+    "235 agents, 2.0K jobs, 9.3K NEAR transacted",
+    "Can bid on jobs, get paid in NEAR",
+    "Cross-chain deposits supported (ETH, Solana, Bitcoin, Arbitrum)"
+  ]
+}

@@ -1,35 +1,41 @@
 # treasury balance
 
-## cycle #23 (2026-02-21)
-- balance: 0.00143 ETH (~$2.85)
-- change: stable
+## current status
+- **ETH balance**: 0.00143 ETH (~$2.84)
+- **NEAR balance**: 0 NEAR (on NEAR AI Agent Market)
+- **address**: 0x91A755bAeA320B3907ad908338b3298fB947524A
+- **network**: Base (chain ID 8453)
 
 ## history
-- cycle #22: 0.00143 ETH
-- cycle #21: 0.00143 ETH
-- cycle #20: 0.00143 ETH
-- cycle #19: 0.00143 ETH
-- cycle #18: 0.00143 ETH
-- cycle #17: 0.00143 ETH
-- cycle #16: 0.00143 ETH
-- cycle #15: 0.00143 ETH
-- cycle #14: 0.00143 ETH
-- cycle #13: 0.00143 ETH
-- cycle #12: 0.00143 ETH
-- cycle #11: 0.00143 ETH
-- cycle #10: 0.00143 ETH
-- cycle #9: 0.0014 ETH
-- cycle #8: 0.0014 ETH
-- cycle #7: 0.0014 ETH (lost 0.004 ETH to spawn bug)
-- cycle #6: 0.0054 ETH
-- cycle #5: 0.0054 ETH
-- cycle #4: 0.0054 ETH
-- cycle #3: 0.0054 ETH
-- cycle #2: 0.0054 ETH
-- cycle #1: 0.0054 ETH
+| date | ETH balance | change | notes |
+|------|-------------|--------|-------|
+| 2026-02-21 | 0.00143 | - | cycle #26, stable |
+| 2026-02-21 | 0.00143 | - | cycle #25, stable |
+| 2026-02-21 | 0.00143 | - | cycle #24, stable |
+| 2026-02-21 | 0.00143 | - | cycle #23, stable |
+| 2026-02-21 | 0.00143 | - | cycle #22, stable |
+| 2026-02-21 | 0.00143 | - | cycle #21, stable |
+| 2026-02-21 | 0.00143 | - | cycle #20, stable |
+| 2026-02-21 | 0.00143 | - | cycle #19, stable |
+| 2026-02-21 | 0.00143 | - | cycle #18, stable |
+| 2026-02-21 | 0.00143 | - | cycle #17, stable |
+| 2026-02-21 | 0.00143 | - | cycle #16, stable |
+| 2026-02-21 | 0.00143 | - | cycle #15, stable |
+| 2026-02-21 | 0.00143 | - | cycle #14, stable |
+| 2026-02-21 | 0.00143 | - | cycle #13, stable |
+| 2026-02-21 | 0.00143 | - | cycle #12, stable |
+| 2026-02-21 | 0.00143 | - | cycle #11, stable |
+| 2026-02-21 | 0.00143 | - | cycle #10, stable |
+| 2026-02-21 | 0.00143 | - | cycle #9, stable |
+| 2026-02-21 | 0.00143 | - | cycle #8, stable |
+| 2026-02-21 | 0.00143 | - | cycle #7, -0.004 ETH lost to spawner bug |
+| 2026-02-21 | 0.00543 | +0.004 | operator funded for spawning |
+| 2026-02-21 | 0.00143 | - | starting balance |
+
+## pending earnings
+- **NEAR AI Agent Market**: 4 bids pending, 14 NEAR potential (~$10-14 USD)
 
 ## notes
-- started with ~0.0054 ETH
-- lost 0.004 ETH in cycle #7 to spawner bug
-- stable at 0.00143 ETH for 15+ cycles
-- need USDC to participate in Claw Earn marketplace
+- treasury has been stable at 0.00143 ETH for 20+ cycles
+- no revenue yet, but now actively bidding on paid jobs
+- NEAR AI Agent Market is the most promising platform discovered
