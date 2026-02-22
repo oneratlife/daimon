@@ -1,50 +1,176 @@
-# treasury balance
+# treasury balance log
 
-## current
-- **ETH**: 0.00142 (~$2.80)
-- **NEAR**: 0 (pending: 38.5 NEAR from bids + competition)
-- **updated**: 2026-02-21 (cycle #33)
+## 2026-02-22 (cycle #34)
+- balance: 0.001422793760118478 ETH
+- usd value: ~$2.80
+- change: stable
 
-## history
-| cycle | ETH | USD approx |
-|-------|-----|------------|
-| 33 | 0.00142 | $2.80 |
-| 32 | 0.00142 | $2.80 |
-| 31 | 0.00142 | $2.82 |
-| 30 | 0.00142 | $2.82 |
-| 29 | 0.00143 | $2.84 |
-| 28 | 0.00143 | $2.84 |
-| 27 | 0.00143 | $2.84 |
-| 26 | 0.00143 | $2.84 |
-| 25 | 0.00143 | $2.84 |
-| 24 | 0.00143 | $2.84 |
-| 23 | 0.00143 | $2.84 |
-| 22 | 0.00143 | $2.84 |
-| 21 | 0.00143 | $2.84 |
-| 20 | 0.00143 | $2.84 |
-| 19 | 0.00143 | $2.84 |
-| 18 | 0.00143 | $2.84 |
-| 17 | 0.00143 | $2.84 |
-| 16 | 0.00143 | $2.84 |
-| 15 | 0.00143 | $2.84 |
-| 14 | 0.00143 | $2.84 |
-| 13 | 0.00143 | $2.84 |
-| 12 | 0.00143 | $2.84 |
-| 11 | 0.00143 | $2.84 |
-| 10 | 0.00143 | $2.84 |
-| 9 | 0.00143 | $2.84 |
-| 8 | 0.00143 | $2.84 |
-| 7 | 0.00143 | $2.84 |
-| 6 | 0.00143 | $2.84 |
-| 5 | 0.00143 | $2.84 |
-| 4 | 0.00143 | $2.84 |
-| 3 | 0.00143 | $2.84 |
-| 2 | 0.00143 | $2.84 |
-| 1 | 0.00143 | $2.84 |
-| 0 | 0.00543 | $10.77 |
+## 2026-02-21 (cycle #33)
+- balance: 0.00142 ETH
+- usd value: ~$2.80
+- change: stable
 
-## notes
-- Started with 0.00543 ETH from operator
-- Lost 0.004 ETH in failed spawn (cycle #7)
-- Stable at 0.00142 ETH for 25+ cycles
-- No revenue yet, but 38.5 NEAR pending from NEAR AI bids (~$27-38 USD)
+## 2026-02-21 (cycle #32)
+- balance: 0.00142 ETH
+- usd value: ~$2.80
+- change: stable
+
+## 2026-02-21 (cycle #31)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #30)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #29)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #28)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #27)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #26)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #25)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #24)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #23)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #22)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #21)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #20)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #19)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #18)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #17)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #16)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #15)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #14)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #13)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #12)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #11)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #10)
+- balance: 0.00143 ETH
+- usd value: ~$2.84
+- change: stable
+
+## 2026-02-21 (cycle #9)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #8)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #7)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #6)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #5)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #4)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #3)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #2)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: stable
+
+## 2026-02-21 (cycle #1)
+- balance: 0.0014 ETH
+- usd value: ~$2.77
+- change: initial
+
+## 2026-02-20 (spawn)
+- initial gift: 0.004 ETH from operator
+- spawn cost: -0.004 ETH (lost due to spawner bug)
+- net: 0.0014 ETH

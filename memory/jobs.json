@@ -1,5 +1,5 @@
 {
-  "lastScanned": "2026-02-21T23:45:23.968Z",
+  "lastScanned": "2026-02-22T01:49:46.876Z",
   "totalJobs": 15,
   "matches": [
     {
@@ -88,6 +88,120 @@
           "matches": [
             "devops",
             "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130487",
+        "title": "Vice President of Engagement Transformation",
+        "company": "Solera Health",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-vice-president-of-engagement-transformation-solera-health-1130487",
+        "description": "Job Summary\n\nSolera Health is seeking an executive-level strategic leader to accelerate enterprise-wide consumer engagement across our Digital Health Network. This role carries a clear enterprise mandate: to double enrollment year over year, improve ROI by optimizing customer acquisition cost (CAC) to lifetime value (LTV), lower Total Cost of Care for health plan and employer partners, and drive measurable outcomes for providers and consumers.\n\nReporting to the Chief Product Officer, the VP of E",
+        "tags": [
+          "architect",
+          "growth",
+          "leader",
+          "strategy",
+          "management",
+          "medical",
+          "health",
+          "executive"
+        ],
+        "posted": "2026-02-21T00:01:22+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "llm"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "llm"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130486",
+        "title": "Director AI Engineering",
+        "company": "Lantern",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-director-ai-engineering-lantern-1130486",
+        "description": "  About Lantern \n Lantern is the specialty care platform connecting people with the best care when they need it most. By curating a Network of Excellence comprised of the nation's top specialists for surgery, cancer care, infusions and more, Lantern delivers excellent care with significant cost savings to employers and their workforces. Lantern also pairs members with a dedicated care team, including Care Advocates and nurses, for the entirety of their care journey, helping them get back to good",
+        "tags": [
+          "director",
+          "content",
+          "engineering"
+        ],
+        "posted": "2026-02-21T00:01:13+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "ai engineer"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "ai engineer"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130485",
+        "title": "Full Stack Software Engineer II",
+        "company": "Technergetics",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-full-stack-software-engineer-ii-technergetics-1130485",
+        "description": "  &nbsp; \n &nbsp; \n &nbsp;      Full Stack Software Engineer II   \n &nbsp; \n   Artificial Intelligence Disclaimer:   \n We will be using our Artificial Intelligence app, \"Alex Taylor\" to conduct the first-round interviews for this position, which should take you approximately 35 minutes to complete. You will receive an email invitation from âAlexâ within ten business days of your application if we want to hold a first-round interview with you. \n \"Alex\" is available to schedule first round int",
+        "tags": [
+          "software",
+          "hr",
+          "system",
+          "director",
+          "code",
+          "engineer"
+        ],
+        "posted": "2026-02-21T00:01:04+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "artificial intelligence"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "artificial intelligence"
+          ]
+        },
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
           ]
         }
       ]
@@ -503,125 +617,6 @@
           "score": 1,
           "matches": [
             "defi"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130380",
-        "title": "Senior Manager Site Reliability Engineer",
-        "company": "Ping Identity",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-manager-site-reliability-engineer-ping-identity-1130380",
-        "description": "   About Ping Identity:&nbsp;  \n At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we provide our customers. It's something that inspires our company. People don't come here to join a culture that's built on digital freedom. They come to cultivate it.&nbsp; \n Our intelligent, cloud identity platform lets people shop, work, bank, and interact wherever and however they wan",
-        "tags": [
-          "manager",
-          "saas",
-          "devops",
-          "cloud",
-          "senior",
-          "operations",
-          "operational",
-          "reliability",
-          "engineer"
-        ],
-        "posted": "2026-02-18T00:03:36+00:00"
-      },
-      "bestMatch": {
-        "profile": "devops",
-        "score": 1,
-        "matches": [
-          "devops"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
-            "devops"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130378",
-        "title": "Content Manager",
-        "company": "NMI",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-content-manager-nmi-1130378",
-        "description": "NMI is looking for a Content Manager to lead the development and execution of the company's content strategy as we continue to grow our leadership position in embedded payments and fintech.\n\nThis role owns content across the full spectrum, from strategic thought leadership to practical, product-led content. You will help define how NMI shows up to its core audiences, including ISOs, banks, payments professionals, ISVs and developers, ensuring our content educates, engages and builds credibility ",
-        "tags": [
-          "manager",
-          "embedded",
-          "technical",
-          "writer",
-          "support",
-          "fintech",
-          "strategy",
-          "lead",
-          "content",
-          "senior",
-          "marketing"
-        ],
-        "posted": "2026-02-18T00:03:19+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "defi"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "defi"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130376",
-        "title": "Senior Site Reliability Engineer",
-        "company": "Ping Identity",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-site-reliability-engineer-ping-identity-1130376",
-        "description": "   About Ping Identity:&nbsp;  \n At Ping Identity, we believe in making digital experiences both secure and seamless for all users, without compromise. We call this digital freedom. And it's not just something we provide our customers. It's something that inspires our company. People don't come here to join a culture that's built on digital freedom. They come to cultivate it.&nbsp; \n Our intelligent, cloud identity platform lets people shop, work, bank, and interact wherever and however they wan",
-        "tags": [
-          "design",
-          "software",
-          "devops",
-          "cloud",
-          "senior",
-          "operations",
-          "reliability",
-          "engineer",
-          "digital nomad"
-        ],
-        "posted": "2026-02-18T00:03:04+00:00"
-      },
-      "bestMatch": {
-        "profile": "devops",
-        "score": 1,
-        "matches": [
-          "devops"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
-            "devops"
           ]
         }
       ]
