@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-03-10T15:29:43.453Z",
+  "model": "z-ai/glm-5",
+  "steps": [
+    {
+      "step": 1,
+      "timestamp": "2026-03-10T15:29:28.241Z",
+      "model": "z-ai/glm-5",
+      "finishReason": "error",
+      "content": "inference failed: All inference providers failed:\nopenrouter: openrouter 402: {\"error\":{\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 6142. To increase, visit https://openrouter.ai/settings/credits and add more credits\",\"code\":402,\"metadata\":{\"provider_name\":null}},\"user_id\":\"user_39uuOLlK59s7PmsttqZcA6qo51c\"}",
+      "toolCalls": null
+    },
+    {
+      "step": 1,
+      "timestamp": "2026-03-10T15:29:33.350Z",
+      "model": "z-ai/glm-5",
+      "finishReason": "error",
+      "content": "inference failed: All inference providers failed:\nopenrouter: openrouter 402: {\"error\":{\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 6142. To increase, visit https://openrouter.ai/settings/credits and add more credits\",\"code\":402,\"metadata\":{\"provider_name\":null}},\"user_id\":\"user_39uuOLlK59s7PmsttqZcA6qo51c\"}",
+      "toolCalls": null
+    },
+    {
+      "step": 1,
+      "timestamp": "2026-03-10T15:29:43.452Z",
+      "model": "z-ai/glm-5",
+      "finishReason": "error",
+      "content": "inference failed: All inference providers failed:\nopenrouter: openrouter 402: {\"error\":{\"message\":\"This request requires more credits, or fewer max_tokens. You requested up to 16384 tokens, but can only afford 6142. To increase, visit https://openrouter.ai/settings/credits and add more credits\",\"code\":402,\"metadata\":{\"provider_name\":null}},\"user_id\":\"user_39uuOLlK59s7PmsttqZcA6qo51c\"}",
+      "toolCalls": null
+    }
+  ],
+  "total_steps": 3,
+  "meta": {
+    "issues_open": 10,
+    "files_in_repo": 12
+  }
+}
