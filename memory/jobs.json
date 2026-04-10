@@ -1,27 +1,78 @@
 {
-  "lastScanned": "2026-02-22T04:13:20.722Z",
-  "totalJobs": 15,
+  "lastScanned": "2026-04-10T07:22:19.136Z",
+  "totalJobs": 18,
   "matches": [
     {
       "job": {
-        "id": "1130442",
-        "title": "Data & Market Insights Associate",
-        "company": "Elemental Terra",
+        "id": "1130961",
+        "title": "Junior Crypto Analyst & Trader",
+        "company": "WhiteBridge-Ltd",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-data-market-insights-associate-elemental-terra-1130442",
-        "description": "  Begini is an international company focused on data analysis and insight generation within the digital asset ecosystem. We work with cryptocurrency markets, on-chain data, and market behavior to support structured decision-making and long-term analytical processes.  We are seeking a Data &amp; Market Insights Associate (Crypto Assets) to join our remote team. This role is designed for individuals interested in cryptocurrency markets, data interpretation, and analytical workflows. The position o",
+        "url": "https://remoteok.com/remote-jobs/remote-junior-crypto-analyst-trader-whitebridge-ltd-1130961",
+        "description": "   WhiteBridge-Ltd is a young and rapidly developing company working in the field of digital markets and analytics. We bring together enterprising people who want to master modern approaches to trading, analysis and decision-making in a dynamic market environment.  We are currently looking for aÂ  Junior Crypto Analyst &amp; Trader , a novice specialist who is ready to complete training, perform real trading operations and develop under the guidance of experienced mentors.    Your Responsibiliti",
+        "tags": [
+          "finance",
+          "crypto",
+          "education",
+          "junior",
+          "analyst",
+          "web3",
+          "blockchain",
+          "defi",
+          "ethereum",
+          "bitcoin",
+          "other",
+          "virtual assistant",
+          "exec"
+        ],
+        "posted": "2026-04-01T14:24:13+00:00"
+      },
+      "bestMatch": {
+        "profile": "solidity-dev",
+        "score": 3,
+        "matches": [
+          "defi",
+          "web3",
+          "ethereum"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "solidity-dev",
+          "score": 3,
+          "matches": [
+            "defi",
+            "web3",
+            "ethereum"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1131018",
+        "title": "Crypto Trader",
+        "company": "Fox GLobal Assets",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-crypto-trader-fox-global-assets-1131018",
+        "description": " Fox Global is an international company operating at the intersection of digital assets, market intelligence, and data-driven trading strategies. Our focus is on building a strong team of professionals who want to gain real-world experience in financial markets and develop practical trading expertise.  We are currently opening a Crypto Trader position for individuals who are starting their professional path and are interested in market analysis, trading and data-driven decision making.  This rol",
         "tags": [
           "other",
           "crypto",
           "finance",
-          "web3",
-          "bitcoin",
           "education",
           "blockchain",
-          "defi"
+          "defi",
+          "web3",
+          "part time",
+          "ops",
+          "junior",
+          "legal",
+          "stats"
         ],
-        "posted": "2026-02-19T15:31:41+00:00"
+        "posted": "2026-04-07T07:17:02+00:00"
       },
       "bestMatch": {
         "profile": "solidity-dev",
@@ -44,107 +95,101 @@
     },
     {
       "job": {
-        "id": "1130430",
-        "title": "Mid Level DevOps Engineer CI CD Optimization",
-        "company": "Ubiminds",
+        "id": "1131044",
+        "title": "IT Specialist II",
+        "company": "Makpar",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-mid-level-devops-engineer-ci-cd-optimization-ubiminds-1130430",
-        "description": "  Info on the Mid-Level DevOps Engineer - CI/CD Optimization (466) role      Ready to take the next step in your international career? We can support you!     Ubiminds is a GPTW-certified, people-first company that partners with American software product companies to scale their global teams. We curate top LATAM talent and connect professionals with long-term, high-impact opportunities while providing full employer-of-record support.     In this role, youâll join a team focused on  modernizing",
+        "url": "https://remoteok.com/remote-jobs/remote-it-specialist-ii-makpar-1131044",
+        "description": "  Who we are:      Makpar is a comprehensive professional and technical solutions provider for the Federal government. We combine functional and technical expertise in cloud engineering, data management, cybersecurity and emerging technologies to deliver mission success. We build the right IT solution for government clients by partnering with them to understand their WHAT, WHY, and HOW. Using our signature consulting methodology that we call âThe Makpar Way,â we help agencies navigate the on",
         "tags": [
-          "design",
-          "hr",
-          "system",
-          "security",
-          "docker",
-          "recruiter",
+          "training",
+          "consulting",
+          "technical",
           "support",
-          "developer",
           "software",
-          "growth",
-          "code",
-          "devops",
-          "management",
-          "reliability",
-          "engineer",
-          "engineering",
-          "full-time",
-          "digital nomad"
+          "cloud",
+          "microsoft",
+          "operations",
+          "operational",
+          "legal"
         ],
-        "posted": "2026-02-19T00:05:19+00:00"
+        "posted": "2026-04-09T00:01:12+00:00"
       },
       "bestMatch": {
         "profile": "devops",
-        "score": 2,
+        "score": 1,
         "matches": [
-          "devops",
-          "docker"
+          "cloud engineer"
         ]
       },
       "allMatches": [
         {
           "profile": "devops",
-          "score": 2,
+          "score": 1,
           "matches": [
-            "devops",
-            "docker"
+            "cloud engineer"
           ]
         }
       ]
     },
     {
       "job": {
-        "id": "1130487",
-        "title": "Vice President of Engagement Transformation",
-        "company": "Solera Health",
+        "id": "1131040",
+        "title": "Mixed Signal IC Layout Design Engineer",
+        "company": "Tenstorrent",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-vice-president-of-engagement-transformation-solera-health-1130487",
-        "description": "Job Summary\n\nSolera Health is seeking an executive-level strategic leader to accelerate enterprise-wide consumer engagement across our Digital Health Network. This role carries a clear enterprise mandate: to double enrollment year over year, improve ROI by optimizing customer acquisition cost (CAC) to lifetime value (LTV), lower Total Cost of Care for health plan and employer partners, and drive measurable outcomes for providers and consumers.\n\nReporting to the Chief Product Officer, the VP of E",
+        "url": "https://remoteok.com/remote-jobs/remote-mixed-signal-ic-layout-design-engineer-tenstorrent-1131040",
+        "description": "Tenstorrent is leading the industry on cutting-edge AI technology, revolutionizing performance expectations, ease of use, and cost efficiency. With AI redefining the computing paradigm, solutions must evolve to unify innovations in software models, compilers, platforms, networking, and semiconductors. Our diverse team of technologists have developed a high performance RISC-V CPU from scratch, and share a passion for AI and a deep desire to build the best AI platform possible. We value collaborat",
         "tags": [
-          "architect",
-          "growth",
-          "leader",
-          "strategy",
-          "management",
-          "medical",
-          "health",
-          "executive"
+          "design",
+          "software",
+          "reliability",
+          "engineer",
+          "digital nomad"
         ],
-        "posted": "2026-02-21T00:01:22+00:00"
+        "posted": "2026-04-09T00:00:37+00:00"
       },
       "bestMatch": {
-        "profile": "ai-engineer",
+        "profile": "solidity-dev",
         "score": 1,
         "matches": [
-          "llm"
+          "defi"
         ]
       },
       "allMatches": [
         {
-          "profile": "ai-engineer",
+          "profile": "solidity-dev",
           "score": 1,
           "matches": [
-            "llm"
+            "defi"
           ]
         }
       ]
     },
     {
       "job": {
-        "id": "1130486",
-        "title": "Director AI Engineering",
-        "company": "Lantern",
+        "id": "1131038",
+        "title": "Lead Instructor Applied AI Engineering Summer 2026",
+        "company": "CodePath",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-director-ai-engineering-lantern-1130486",
-        "description": "  About Lantern \n Lantern is the specialty care platform connecting people with the best care when they need it most. By curating a Network of Excellence comprised of the nation's top specialists for surgery, cancer care, infusions and more, Lantern delivers excellent care with significant cost savings to employers and their workforces. Lantern also pairs members with a dedicated care team, including Care Advocates and nurses, for the entirety of their care journey, helping them get back to good",
+        "url": "https://remoteok.com/remote-jobs/remote-lead-instructor-applied-ai-engineering-summer-2026-codepath-1131038",
+        "description": "CodePath is reprogramming higher education to create the first generation of AI-native engineers, CTOs, and founders. \n\nWe deliver industry-vetted courses and career support centered on the needs of first-generation and low-income students. Our students train with senior engineers, intern at top companies, and rise together to become the tech leaders of tomorrow. \n\nWith over 40,000 students and alumni from 1,000 colleges now working at 4,050 companies, we are reshaping the tech workforce and the",
         "tags": [
-          "director",
-          "content",
+          "instructor",
+          "students",
+          "training",
+          "technical",
+          "support",
+          "manager",
+          "education",
+          "lead",
+          "senior",
           "engineering"
         ],
-        "posted": "2026-02-21T00:01:13+00:00"
+        "posted": "2026-04-09T00:00:16+00:00"
       },
       "bestMatch": {
         "profile": "ai-engineer",
@@ -165,367 +210,23 @@
     },
     {
       "job": {
-        "id": "1130485",
-        "title": "Full Stack Software Engineer II",
-        "company": "Technergetics",
+        "id": "1131031",
+        "title": "Senior Backend Engineer MS050KA",
+        "company": "Coderio",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-full-stack-software-engineer-ii-technergetics-1130485",
-        "description": "  &nbsp; \n &nbsp; \n &nbsp;      Full Stack Software Engineer II   \n &nbsp; \n   Artificial Intelligence Disclaimer:   \n We will be using our Artificial Intelligence app, \"Alex Taylor\" to conduct the first-round interviews for this position, which should take you approximately 35 minutes to complete. You will receive an email invitation from âAlexâ within ten business days of your application if we want to hold a first-round interview with you. \n \"Alex\" is available to schedule first round int",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-backend-engineer-ms050ka-coderio-1131031",
+        "description": "  Sobre Coderio  \n &nbsp; \n Coderio diseÃ±a y entrega soluciones digitales escalables para empresas globales. Con una base tÃ©cnica sÃ³lida y una mentalidad orientada al producto, nuestros equipos lideran proyectos complejos desde la arquitectura hasta la ejecuciÃ³n. Valoramos la autonomÃ­a, la comunicaciÃ³n clara y la excelencia tÃ©cnica, colaborando estrechamente con equipos y socios internacionales para construir tecnologÃ­a que genera impacto. \n ð MÃ¡s informaciÃ³n:  http://coderio.com  \n",
         "tags": [
-          "software",
-          "hr",
-          "system",
-          "director",
-          "code",
-          "engineer"
-        ],
-        "posted": "2026-02-21T00:01:04+00:00"
-      },
-      "bestMatch": {
-        "profile": "ai-engineer",
-        "score": 1,
-        "matches": [
-          "artificial intelligence"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "ai-engineer",
-          "score": 1,
-          "matches": [
-            "artificial intelligence"
-          ]
-        },
-        {
-          "profile": "fullstack",
-          "score": 1,
-          "matches": [
-            "full stack"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130471",
-        "title": "Engineer",
-        "company": "ScienceLogic",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-engineer-sciencelogic-1130471",
-        "description": "  What we're looking for...&nbsp;  \n ScienceLogic is seeking a Senior Engineer, Developer Platform to improve our developer platform and tools. This role will focus on the creation and maintenance of our modern developer platform, leveraging Kubernetes, CI/CD, and cloud computing to empower our developers to create cutting-edge and innovative software systems. A key area of focus for this role is owning and improving the CI/CD test automation pipeline to increase developer productivity, reduce c",
-        "tags": [
-          "developer",
-          "software",
-          "testing",
-          "test",
-          "cloud",
+          "serverless",
+          "node.js",
+          "api",
           "senior",
           "engineer",
           "engineering",
-          "digital nomad"
+          "backend"
         ],
-        "posted": "2026-02-20T16:00:44+00:00"
-      },
-      "bestMatch": {
-        "profile": "devops",
-        "score": 1,
-        "matches": [
-          "kubernetes"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
-            "kubernetes"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130467",
-        "title": "Partner Success Manager",
-        "company": "MoonPay",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-partner-success-manager-moonpay-1130467",
-        "description": "  About MoonPay       Hi, weâre MoonPay. Weâre here to onboard the world to the decentralized economy by making digital money move as universally and effortlessly as the internet.       Why?       Because crypto, stablecoins and blockchain arenât just technologies. Theyâre tools for global financial empowerment. They give people and businesses more control over their money, their digital assets, and their future, opening access to legacy financial systems that have been out of reach for ",
-        "tags": [
-          "manager",
-          "web3",
-          "crypto",
-          "system",
-          "training",
-          "technical",
-          "support",
-          "software",
-          "voice",
-          "financial",
-          "operations",
-          "operational",
-          "excel",
-          "health",
-          "healthcare"
-        ],
-        "posted": "2026-02-20T15:00:01+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "web3"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "web3"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130456",
-        "title": "Senior Full Stack Software Developer",
-        "company": "Judi Health",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-full-stack-software-developer-judi-health-1130456",
-        "description": "   About Judi Health  \n Judi Health is an enterprise health technology company providing a comprehensive suite of solutions for employers and health plans, including: \n \n  Capital Rx , a public benefit corporation delivering full-service pharmacy benefit management (PBM) solutions to self-insured employers, \n  Judi Healthâ¢ , which offers full-service health benefit management solutions to employers, TPAs, and health plans, and \n  JudiÂ® , the industryâs leading proprietary Enterprise Health ",
-        "tags": [
-          "developer",
-          "software",
-          "design",
-          "system",
-          "full-stack",
-          "management",
-          "senior",
-          "medical",
-          "health",
-          "healthcare",
-          "digital nomad"
-        ],
-        "posted": "2026-02-20T08:00:20+00:00"
-      },
-      "bestMatch": {
-        "profile": "fullstack",
-        "score": 1,
-        "matches": [
-          "full stack"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "fullstack",
-          "score": 1,
-          "matches": [
-            "full stack"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130454",
-        "title": "Social Media Lead",
-        "company": "OpenSea",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-social-media-lead-opensea-1130454",
-        "description": " OpenSea is the gateway to web3âs next chapterâwhere NFTs, fungible tokens, and emerging digital assets converge to create open, user-owned economies. As a foundational player in the crypto space, weâre building infrastructure that supports millions of users and sets new standards for how people discover and exchange digital value.    Our team is small but mighty: hands-on, fast-moving, and deeply committed to shipping meaningful work. We're remote-first by design, AI-empowered by default,",
-        "tags": [
-          "crypto",
-          "copywriter",
-          "strategy",
-          "lead",
-          "content",
-          "analytics",
-          "health",
-          "full-time",
-          "non tech"
-        ],
-        "posted": "2026-02-20T08:00:01+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "web3"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "web3"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130445",
-        "title": "Real Estate Investor â Expert AI Trainer",
-        "company": "Mentis AI",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-real-estate-investor-expert-ai-trainer-mentis-ai-1130445",
-        "description": " Our founders are ex-Lazard and Partners Group, and we're headquartered in London and San Francisco. Mentis AI brings real-world expertise from finance into AI model training. We bridge the gap between human and artificial intelligence.     About this role:  You will bring institutional real estate investment expertise to an AI training project covering acquisitions, underwriting, asset management, and fund-level analytics capturing how top REPE professionals evaluate opportunities, structure tr",
-        "tags": [
-          "trainer",
-          "training",
-          "financial",
-          "investment",
-          "investor",
-          "finance",
-          "analytics",
-          "non tech"
-        ],
-        "posted": "2026-02-19T16:01:54+00:00"
-      },
-      "bestMatch": {
-        "profile": "ai-engineer",
-        "score": 1,
-        "matches": [
-          "artificial intelligence"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "ai-engineer",
-          "score": 1,
-          "matches": [
-            "artificial intelligence"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130443",
-        "title": "Technical Lead DevOps",
-        "company": "Nearform",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-technical-lead-devops-nearform-1130443",
-        "description": "  Technical Lead - DevOps (Perm, Italy, Remote)  \n  This is a permanent full time remote opportunity for those based in Italy.    About Nearform   \n Nearform is an independent team of data &amp; AI experts, engineers, and designers who build intelligent digital solutions and capability at pace. We create AI-enabled solutions that enhance digital experiences, empower developers, and deliver measurable results. In these ways, we partner with ambitious enterprises to deliver enduring impact. \n Our ",
-        "tags": [
-          "technical",
-          "devops",
-          "lead",
-          "senior",
-          "engineering"
-        ],
-        "posted": "2026-02-19T16:01:35+00:00"
-      },
-      "bestMatch": {
-        "profile": "devops",
-        "score": 1,
-        "matches": [
-          "devops"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
-            "devops"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130436",
-        "title": "DevOps Engineer",
-        "company": "InfStones",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-devops-engineer-infstones-1130436",
-        "description": "  Job Position: DevOps Engineer    Location: Dallas, TX, USA (Remote Acceptable - USA Applicants Only)    Company:  https://infstones.com/     Contact:    recruiter-usa@infstones.com        About Company   InfStones is an advanced, enterprise-grade Platform as a Service (PaaS) blockchain infrastructure provider trusted by the top blockchain companies in the world. InfStonesâ AI-based infrastructure provides developers worldwide with a rugged, powerful node management platform alongside an easy",
-        "tags": [
-          "amazon",
-          "web3",
-          "system",
-          "security",
-          "support",
-          "software",
-          "testing",
-          "test",
-          "code",
-          "qa",
-          "devops",
-          "serverless",
-          "cloud",
-          "git",
-          "node",
-          "administrator",
-          "management",
-          "reliability",
-          "engineer",
-          "linux",
-          "full-time"
-        ],
-        "posted": "2026-02-19T08:00:02+00:00"
-      },
-      "bestMatch": {
-        "profile": "solidity-dev",
-        "score": 1,
-        "matches": [
-          "web3"
-        ]
-      },
-      "allMatches": [
-        {
-          "profile": "solidity-dev",
-          "score": 1,
-          "matches": [
-            "web3"
-          ]
-        },
-        {
-          "profile": "fullstack",
-          "score": 1,
-          "matches": [
-            "node"
-          ]
-        },
-        {
-          "profile": "devops",
-          "score": 1,
-          "matches": [
-            "devops"
-          ]
-        }
-      ]
-    },
-    {
-      "job": {
-        "id": "1130433",
-        "title": "Job 27602 Mid level Developer NodeJS Brazil",
-        "company": "CI&amp;T",
-        "location": "Remote",
-        "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-job-27602-mid-level-developer-nodejs-brazil-ciampt-1130433",
-        "description": "  Somos especialistas em  transformaÃ§Ã£o tecnolÃ³gica , unindo expertise humana Ã  IA para criar soluÃ§Ãµes tech escalÃ¡veis. Com mais de 8,000 CI&amp;Ters ao redor do mundo, jÃ¡ formamos parcerias com mais de 1,000 clientes durante nossos 30 anos de histÃ³ria. InteligÃªncia Artificial Ã© nossa realidade.        Importante : se vocÃª reside na RegiÃ£o Metropolitana de Campinas, sua presenÃ§a nos escritÃ³rios da cidade serÃ¡ obrigatÃ³ria, conforme a polÃ­tica de frequencia vigente.       Sua mis",
-        "tags": [
-          "developer",
-          "javascript",
-          "nodejs",
-          "cloud",
-          "api",
-          "digital nomad"
-        ],
-        "posted": "2026-02-19T00:05:44+00:00"
+        "posted": "2026-04-08T08:00:53+00:00"
       },
       "bestMatch": {
         "profile": "fullstack",
@@ -546,27 +247,264 @@
     },
     {
       "job": {
-        "id": "1130417",
-        "title": "Project Coordinator",
-        "company": "Caylent",
+        "id": "1131028",
+        "title": "Staff Engineer Digital Lending",
+        "company": "OakNorth",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-project-coordinator-caylent-1130417",
-        "description": "Caylent is a cloud native services company that helps organizations bring the best out of their people and technology using Amazon Web Services (AWS). We provide a full-range of AWS services including workload migrations and modernization, cloud native application development, DevOps, data engineering, security and compliance, and everything in between.\n\nAt Caylent, our people always come first.  We are a global company and operate fully remote with employees in Canada, the United States, and La",
+        "url": "https://remoteok.com/remote-jobs/remote-staff-engineer-digital-lending-oaknorth-1131028",
+        "description": "  At OakNorth, weâre on a mission to empower the UKâs most ambitious businesses. Since 2015, weâve lent over $21 billion across the UK and US, helped create more than 58,000 new homes and 36,000 new jobs, and supported hundreds of thousands of personal savers â all while fuelling the UK economy.       Team Mission ð&nbsp;       We power OakNorth's relationshipâled lending with modern, modular tools across origination, underwriting, execution, and portfolio monitoring.  \\n      The R",
         "tags": [
-          "amazon",
+          "saas",
+          "react",
           "security",
           "technical",
-          "coordinator",
-          "web",
-          "scrum",
+          "support",
+          "testing",
+          "test",
+          "growth",
+          "devops",
+          "financial",
+          "bank",
           "cloud",
+          "lead",
+          "analytics",
+          "go",
+          "engineer",
+          "engineering"
+        ],
+        "posted": "2026-04-08T08:00:12+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "react"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "react"
+          ]
+        },
+        {
+          "profile": "devops",
+          "score": 1,
+          "matches": [
+            "devops"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130983",
+        "title": "Senior Strategist Future of Work & AI Readiness",
+        "company": "American Institutes for Research",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-strategist-future-of-work-ai-readiness-american-institutes-for-research-1130983",
+        "description": "AIR is seeking a Senior Work & AI Strategist to join our Economic & Employment Program to provide leadership and visioning in the design and delivery of policy and programs that helps education, workforce, and public systems respond to emerging challenges, including the impact of artificial intelligence (AI) and changes in the future of work. This role leads complex projects, supports the development of reusable tools and intellectual property, and partners with clients to translate data and ana",
+        "tags": [
+          "design",
+          "system",
+          "strategist",
+          "support",
+          "senior",
+          "digital nomad"
+        ],
+        "posted": "2026-04-02T16:00:39+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "artificial intelligence"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "artificial intelligence"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130979",
+        "title": "Intermediate Full Stack Engineer",
+        "company": "Runn",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-intermediate-full-stack-engineer-runn-1130979",
+        "description": "  KeyÂ Facts    Role:  Software Engineer   Levels : Intermediate   Salaries :  NZD $121k   Location : Anywhere in New Zealand   Hours: Â  37.5 hours a week   Team size: Â  Small, cross-functional product squads   Full Benefits    We have transparent salaries, which is set globally for all our staff  20 days paid leave with extra leave based on tenure, 20 days sick leave  Fully remote team across different timezones  Macbook + NZD $3,000 for home office setup  Health Insurance coverage  Advance y",
+        "tags": [
+          "technical",
+          "engineer",
+          "dev",
+          "full time",
+          "saas",
+          "web dev",
+          "front end"
+        ],
+        "posted": "2026-04-02T08:36:10+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "full stack"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130978",
+        "title": "Senior Full Stack Engineer",
+        "company": "Runn",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-full-stack-engineer-runn-1130978",
+        "description": "  KeyÂ Facts    Role:  Software Engineer   Levels : Senior II   Salaries :  NZD $181k   Location : Anywhere in New Zealand   Hours: Â  37.5 hours a week   Team size: Â  Small, cross-functional product squads   Full Benefits    We have transparent salaries, which is set globally for all our staff  20 days paid leave with extra leave based on tenure, 20 days sick leave  Fully remote team across different timezones  Macbook + NZD $3,000 for home office setup  Health Insurance coverage  Advance your",
+        "tags": [
+          "technical",
+          "engineer",
+          "senior",
+          "dev",
+          "full time",
+          "saas",
+          "web dev",
+          "front end"
+        ],
+        "posted": "2026-04-02T08:23:38+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "full stack"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130971",
+        "title": "Senior Engagement Manager",
+        "company": "Medallion",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-engagement-manager-medallion-1130971",
+        "description": "   About Medallion:  \n At Medallion, we believe healthcare teams should focus on what truly mattersâdelivering exceptional patient care. Thatâs why weâve built a leading provider operations platform to eliminate the administrative bottlenecks that slow healthcare organizations down. By automating licensing, credentialing, payer enrollment, and compliance monitoring, Medallion empowers healthcare operations teams to streamline their workflows, improve provider satisfaction, and accelerate r",
+        "tags": [
+          "manager",
+          "salesforce",
           "management",
           "senior",
-          "engineering",
-          "recruitment"
+          "operations",
+          "healthcare"
         ],
-        "posted": "2026-02-19T00:03:25+00:00"
+        "posted": "2026-04-02T00:00:46+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "llm"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "llm"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130948",
+        "title": "Director of Product Marketing",
+        "company": "Medallion",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-director-of-product-marketing-medallion-1130948",
+        "description": "   About Medallion:  \n At Medallion, we believe healthcare teams should focus on what truly mattersâdelivering exceptional patient care. Thatâs why weâve built a leading provider operations platform to eliminate the administrative bottlenecks that slow healthcare organizations down. By automating licensing, credentialing, payer enrollment, and compliance monitoring, Medallion empowers healthcare operations teams to streamline their workflows, improve provider satisfaction, and accelerate r",
+        "tags": [
+          "director",
+          "salesforce",
+          "strategy",
+          "lead",
+          "operations",
+          "marketing",
+          "healthcare",
+          "non tech"
+        ],
+        "posted": "2026-04-01T00:00:25+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "llm"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "llm"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130943",
+        "title": "Platform Administrator",
+        "company": "SharkNinja",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-platform-administrator-sharkninja-1130943",
+        "description": "    About Us   &nbsp;  \n SharkNinja&nbsp;is a global product design and technology company, with a diversified portfolio of 5-star rated lifestyle solutions that positively&nbsp;impact&nbsp;peopleâs lives in homes around the world.  Powered by two trusted, global brands, Shark and Ninja , the company has a proven&nbsp;track record&nbsp;of bringing disruptive innovation to market and developing one consumer product after another has allowed&nbsp;SharkNinja&nbsp;to enter multiple product categor",
+        "tags": [
+          "design",
+          "amazon",
+          "system",
+          "support",
+          "growth",
+          "devops",
+          "cloud",
+          "administrator",
+          "digital nomad"
+        ],
+        "posted": "2026-03-31T16:00:24+00:00"
       },
       "bestMatch": {
         "profile": "devops",
@@ -587,28 +525,162 @@
     },
     {
       "job": {
-        "id": "1130404",
-        "title": "Senior Content Program Strategist",
-        "company": "Pulley",
+        "id": "1130939",
+        "title": "Program Manager Major Deployments",
+        "company": "Skydio",
         "location": "Remote",
         "salary": "Not specified",
-        "url": "https://remoteok.com/remote-jobs/remote-senior-content-program-strategist-pulley-1130404",
-        "description": "âBefore you leave the house, look in the mirror and take one thing off.â\n- Coco Chanel\n\nThe internet does not have a content problem. It has a judgment problem. And with the rise of AI, the cost of publishing has collapsed while the cost of trust has only increased. The next generation of great content marketers wonât be defined by how much they ship, but by their decisions around what to ship.\n\nPulley is looking for a Senior Content Program Strategist to define and mature our content syst",
+        "url": "https://remoteok.com/remote-jobs/remote-program-manager-major-deployments-skydio-1130939",
+        "description": " Skydio is the leading US drone company and the world leader in autonomous flight, the key technology for the future of drones and aerial mobility. The Skydio team combines deep expertise in artificial intelligence, best-in-class hardware and software product development, operational excellence, and customer obsession to empower a broader, more diverse audience of drone users, from utility inspectors to first responders, soldiers in battlefield scenarios and beyond.   About the role:   Skydio is",
         "tags": [
-          "system",
-          "strategist",
+          "manager",
+          "design",
+          "technical",
+          "support",
+          "software",
+          "travel",
+          "financial",
+          "leader",
           "management",
-          "content",
+          "lead",
           "senior",
-          "marketing"
+          "operational",
+          "analytics",
+          "health",
+          "engineering",
+          "full-time",
+          "digital nomad"
         ],
-        "posted": "2026-02-19T00:01:39+00:00"
+        "posted": "2026-03-31T08:00:22+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "artificial intelligence"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "artificial intelligence"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130934",
+        "title": "Data Scientist Claim Experience Analytics",
+        "company": "Extend",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-data-scientist-claim-experience-analytics-extend-1130934",
+        "description": "   About Extend:  \n \n Extend is revolutionizing the post-purchase experience for retailers and their customers by providing merchants with AI-driven solutions that enhance customer satisfaction and drive revenue growth. Our comprehensive platform offers automated customer service handling, seamless returns/exchange management, end-to-end automated fulfillment, and product protection and shipping protection alongside Extend's best-in-class fraud detection. By integrating leading-edge technology w",
+        "tags": [
+          "operational",
+          "analytics",
+          "engineering"
+        ],
+        "posted": "2026-03-31T00:00:35+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "llm"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "llm"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130933",
+        "title": "Senior Software Engineer Full Stack",
+        "company": "Grow Therapy",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-senior-software-engineer-full-stack-grow-therapy-1130933",
+        "description": "   About Us:  \n Grow Therapy is on a mission to serve as the trusted partner for therapists growing their practice, and patients accessing high-quality care. Powered by technology, we are a three-sided marketplace that empowers providers, augments insurance payors, and serves patients. Following the mass increase in depression and anxiety, the need for accessibility is more important than ever. To make our vision for mental healthcare a reality, we're building a team of entrepreneurs and mission",
+        "tags": [
+          "software",
+          "system",
+          "technical",
+          "senior",
+          "healthcare",
+          "engineer",
+          "engineering"
+        ],
+        "posted": "2026-03-31T00:00:24+00:00"
+      },
+      "bestMatch": {
+        "profile": "fullstack",
+        "score": 1,
+        "matches": [
+          "full stack"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "fullstack",
+          "score": 1,
+          "matches": [
+            "full stack"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130926",
+        "title": "Product Security Manager",
+        "company": "MoonPay",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-product-security-manager-moonpay-1130926",
+        "description": "  About MoonPay       Hi, weâre MoonPay. Weâre here to onboard the world to the decentralized economy by making digital money move as universally and effortlessly as the internet.       Why?       Because crypto, stablecoins and blockchain arenât just technologies. Theyâre tools for global financial empowerment. They give people and businesses more control over their money, their digital assets, and their future, opening access to legacy financial systems that have been out of reach for ",
+        "tags": [
+          "security",
+          "manager",
+          "design",
+          "web3",
+          "crypto",
+          "system",
+          "training",
+          "technical",
+          "support",
+          "software",
+          "testing",
+          "code",
+          "voice",
+          "financial",
+          "serverless",
+          "cloud",
+          "leader",
+          "management",
+          "lead",
+          "operations",
+          "healthcare",
+          "engineering",
+          "digital nomad"
+        ],
+        "posted": "2026-03-28T16:00:52+00:00"
       },
       "bestMatch": {
         "profile": "solidity-dev",
         "score": 1,
         "matches": [
-          "defi"
+          "web3"
         ]
       },
       "allMatches": [
@@ -616,7 +688,51 @@
           "profile": "solidity-dev",
           "score": 1,
           "matches": [
-            "defi"
+            "web3"
+          ]
+        }
+      ]
+    },
+    {
+      "job": {
+        "id": "1130924",
+        "title": "Staff Machine Learning Engineer",
+        "company": "Fullscript",
+        "location": "Remote",
+        "salary": "Not specified",
+        "url": "https://remoteok.com/remote-jobs/remote-staff-machine-learning-engineer-fullscript-1130924",
+        "description": "   About Fullscript       Weâre an industry-leading health technology company on a mission to help people get better. We started in 2011 with one simple idea. Make it easier for practitioners to access the products they trust so they can deliver better care.     That simple idea grew into a platform that powers every part of care. Today, more than 125,000 practitioners use Fullscript for clinical insights, lab interpretations, patient analytics, education, and access to high-quality supplement",
+        "tags": [
+          "design",
+          "system",
+          "python",
+          "technical",
+          "support",
+          "code",
+          "senior",
+          "go",
+          "health",
+          "healthcare",
+          "engineer",
+          "engineering",
+          "backend",
+          "digital nomad"
+        ],
+        "posted": "2026-03-28T16:00:32+00:00"
+      },
+      "bestMatch": {
+        "profile": "ai-engineer",
+        "score": 1,
+        "matches": [
+          "machine learning"
+        ]
+      },
+      "allMatches": [
+        {
+          "profile": "ai-engineer",
+          "score": 1,
+          "matches": [
+            "machine learning"
           ]
         }
       ]
